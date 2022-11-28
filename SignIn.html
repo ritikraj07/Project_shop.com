@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="SignIn.css">
+</head>
+<body>
+    <div id="formMainPage">
+ 
+        <div id="signInform">
+            <div>
+                <h1>Sign in</h1>
+                <form action="">
+                    <div>
+                        <label for="">Email address:</label><br>
+                        <input type="email" name="" id="registered-email" placeholder="yourname@example.com" style="font-style:italic">
+                    </div>
+                    <div>
+                        <label for="">Password:</label><br>
+                        <input type="password" name="" id="saved-password" placeholder="Please enter your password" style="font-style:italic" autocomplete="off">
+                    </div>
+                    
+                </form>
+                <p>Forgot your password?</p>
+                <button id="signIn-btn">Sign in</button>
+            </div>
+        
+            <div>
+                <h2>Don't have an account?</h2>
+                <p>With a SHOP.COM account, you can enjoy the following benefits: 
+                   up to 50% Cashback on eligible purchases, redeem discount coupons,
+                   order status and history, saved payment options and addresses,
+                   exclusive emails and more. <u>Learn more</u>
+                </p>
+                <button id="goToCreateAcc">Create your new account</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var registeredUser= JSON.parse(localStorage.getItem("registeredUser")) || [];
+
+    document.getElementById("signIn-btn").addEventListener("click",getSignedIn);
+
+    document.getElementById("goToCreateAcc").addEventListener("click",goToCreateAccPage);
+
+    function goToCreateAccPage(){
+        window.location.href="CreateAcc.html"
+    }
+
+
+    function getSignedIn(){
+        var email= document.getElementById("registered-email").value;
+        var password= document.getElementById("saved-password").value;
+        var flag =false;
+        registeredUser.map(function(elem){
+            if(elem.email==email && elem.password==password){
+               var signInUser=1;
+               localStorage.setItem("signInUser",signInUser);
+               flag=true;
+               window.location.href="";
+            }
+        })
+        if(flag==false){
+            alert("Email or Password is incorrect !")
+            window.location.reload();
+        }
+    }
+
+</script>

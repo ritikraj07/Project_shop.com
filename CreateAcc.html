@@ -10,7 +10,7 @@
   <body>
     <div>
         <h1>Create an account</h1>
-    <form action="" id="createAccform">
+    <form action="SignIn.html" id="createAccform">
       <p>* Indicates required field</p>
       <div>
          <div>
@@ -113,13 +113,13 @@
         var password= document.getElementById("password").value;
         var confirmPassword= document.getElementById("confirmPass").value;
         var user={email: email, password: password};
-        if(password==confirmPassword){
+        if(password==confirmPassword &&  email!="" && password!=""){
             registeredUser.push(user);
             localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
+            
         }
         else{
             alert("Uh oh! Your password and confirm password don't match!");
-
         }
         
     }
