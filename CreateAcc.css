@@ -1,0 +1,171 @@
+form{
+    /* border: 2px solid red; */
+    width: 62%;
+    margin: auto;
+    color: #202340;
+}
+
+
+#createAccform>div:nth-child(2)>div:nth-child(1){
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+#createAccform>div:nth-child(2)>div:nth-child(1) input{
+    padding: 3%;
+    width:92% ;
+    font-size: 130%;
+}
+
+#createAccform>div:nth-child(2)>div:nth-child(1) label{
+    font-size: 130%;
+}
+
+#createAccform>div:nth-child(2)>div:nth-child(2){
+margin: 2% 0 0 0;
+font-size: 130%;
+/* border: 2px solid blue; */
+}
+
+#createAccform>div:nth-child(2)>div:nth-child(2) input{
+    padding: 1.5% ;
+    width:43.5% ;
+    font-size: 90%;
+}
+
+#createAccform>div:nth-child(2)>div:nth-child(3){
+    /* border: 2px solid blue;  */
+    margin: 2% 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+} 
+#createAccform>div:nth-child(2)>div:nth-child(3) label{
+    font-size: 130%;
+}
+
+
+#createAccform>div:nth-child(2)>div:nth-child(3) input{
+    padding: 3%;
+    width:92% ;
+    font-size: 130%;
+}
+
+
+#createAccform>div:nth-child(3){
+    /* border: 2px solid blue; */
+    margin: -1% 0 0 0;
+}
+
+#createAccform>div:nth-child(3) div:nth-child(2){
+    font-size: 130%;
+    margin: -1% 0 0 0;
+}
+
+
+#createAccform>div:nth-child(3) div:nth-child(3){
+    /* border: 2px solid blue; */
+    margin: 1% 0 0 0;
+    font-size: 130%;
+}
+
+#createAccform>div:nth-child(3) div:nth-child(3) input{
+    padding: 1.5% ;
+    width:43.5% ;
+    font-size: 90%;
+
+}
+
+#checkbox{
+    height: 22px;
+    width: 22px;
+    border: 2px solid red;
+    
+}
+
+#createAccform>div:nth-child(4){
+    /* border: 2px solid red; */
+    font-size: 130%;
+}
+
+#createAccform>div:nth-child(4) div:nth-child(1){
+    margin: 2% 0 0 0;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+#createAccform>div:nth-child(4) div:nth-child(1) input{
+    width: 95%;
+    padding: 1.7% 
+}
+
+#createAccform>div:nth-child(4) p{
+    margin: 0% 0 0 0;
+    /* border: 2px solid red; */
+    font-size: 95%;
+}
+#createAccform>div:nth-child(5){
+    /* border: 2px solid red; */
+    margin: 3% 0 0 0;
+    font-size: 120%;
+}
+
+#createAccform>div:nth-child(5) h2:nth-child(1){
+    margin: 0 0 -1% 0 ;
+    /* border: 2px solid rebeccapurple; */
+} 
+
+
+#createAccform>div:nth-child(6){
+    /* border: 2px solid red; */
+    margin: 3% 0 0 0;
+    font-size: 120%;
+    
+    
+}
+
+
+#createAccform>div:nth-child(6) label:nth-child(1){
+    font-weight: 900;
+}
+
+
+#createAccform>div:nth-child(6) div:last-child{
+    margin: 1% 0 0 0;
+    font-size: 120%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 29%;
+    padding:-1% 1%;
+    background-color: #f9f9f9 ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#createAccform>div:nth-child(6) div:last-child img{
+    width: 40%;
+}
+
+#submit{
+    margin: 2.5% 0 0 0;
+    padding: 1% 13% ;
+    font-size: 150%;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+    background-color: #414467;
+    border: none;
+}
+h1{
+    text-align: center;
+    margin-left: -46%;
+    font-size: 235%;
+}
+
+#createAccform p:first-child{
+    font-size: 140%;
+    color: gray;
+}
