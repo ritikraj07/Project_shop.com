@@ -1,5 +1,12 @@
 #Exclu_container{
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: repeat(6 1fr);
+    /* border: 2px solid red; */
+    display:flex;
+    margin:20px 0;
+}
+
+#Exclu_container div:nth-child(1){
+    border: 1px solid green;
+    width: 25%;
+    padding: 10px;
+    margin: 0 10px 0 0;
 }
