@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products Page</title>
+    <link rel="stylesheet" href="MainProduct.css">
+</head>
+
+<body>
+    <div id="productPage-body">
+        <p>SHOP.COM / Shoes / Men / Oxfords / 10</p>
+        <hr>
+        <div>
+            <div id="sortBestMatch">
+                 <div>Sort:</div>
+                <select name="" id="SortBy">
+                    <option value="best">Best Match</option>
+                    <option value="htl">Price High-Low</option>
+                    <option value="lth">Price Low-High</option>
+                </select>
+            </div>
+            
+
+            <div id="filterbtn">
+                <button>Filter</button>
+            </div>
+        </div>
+
+        
+        <hr>
+
+        <div id="main">
+
+
+            <div id="leftPortion">
+                <div>
+                    <input id="checkbox1" class="checkboxs" type="checkbox"> 
+                    <label for=""><span id="oneCart-img"><img src="https://img.shop.com/Image/resources/images/onecart-icon.svg" alt=""></span> <b>OneCart®</b>  (94)</label>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <input id="checkbox1" class="checkboxs" type="checkbox"> 
+                        <label for="">Sale items  (24,885)</label>
+                    </div>
+                    <div>
+                        <input  id="checkbox1" class="checkboxs" type="checkbox"> 
+                        <p>Shipping Offers  (8,189)</p> 
+                    </div>
+                   
+                </div>
+                <hr size="0" width="90%">
+
+                <div>
+                    <button class="MaterialType" id="mensShoes" onclick="hideMensShoeType()">Men's Shoe Type   <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="closeMensShoesType" class="mensShoesType">
+                   <p>Boots  (10,817)</p> 
+                   <p>Athletic  (9,706)</p>
+                   <p>Slip-Ons  (6,067)</p>
+                   <p>Oxfords  (4,994)</p>
+                   <p>Slippers  (3,447)</p>
+                   <p>Sandals  (3,221)</p>
+                   <p>Mules  (195)</p>
+                </div>
+
+                <div>
+                    <button  id="material" class="MaterialType" onclick="hideMaterialType()">Material  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductMaterialType" class="mensShoesType">
+                   <p>Boots  (10,817)</p>
+                    <p>Rubber  (23,264)</p>
+                   <p>Textiles  (22,510)</p>
+                   <p>Leather  (21,999)</p>
+                   <p>Plastic  (785)</p>
+                   <p>Wood  (555)</p>
+                </div> 
+
+
+                <div>
+                    <button id="ShoeSize" class="MaterialType" onclick="hideShoeSize()">Size  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductSize" class="mensShoesType">
+                   <p onclick="getShoeSize('5')" value="5">5  (6,003)</p>
+                   <p onclick="getShoeSize('6')">6  (5,568)</p>
+                   <p onclick="getShoeSize('7')">7  (6,473)</p>
+                   <p onclick="getShoeSize('8')">8 (5,802)</p>
+                   <p onclick="getShoeSize('9')">9 (4,727)</p>
+                   <p>10 (5,598)</p>
+                   <p>11  (6,407)</p>
+                   <p>11½  (4,367)</p>
+                   <p>12  (5,706)</p>
+                   <p>13  (5,135)</p>
+                   <p>+ See MoreSize</p>
+                </div> 
+
+                <div>
+                    <button id="shoeColor" class="MaterialType" onclick="hidecolor()">Color  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductColor" class="mensShoesType">
+                   <p> Beige  (2,246)</p>   
+                   <p>Black  (15,348)</p>
+                   <p>Blue  (4,379)</p>
+                   <p>Brown  (8,901)</p>
+                   <p>Gold  (597)</p>
+                   <p>Gray  (6,261)</p>
+                   <p>Green  (1,728)</p>
+                   <p>Red  (2,196)</p>
+                   <p>Silver  (963)</p>
+                   <p>White  (4,587)</p>
+                   <p>+ See MoreSize</p>
+                </div> 
+
+
+                <div>
+                    <button class="MaterialType">Men's Shoe Width  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductWidth" class="mensShoesType">
+                   <p> Any Width  (46,345)</p>
+                   <p>Wide  (5,321)</p>
+                   <p>Extra Wide  (457)</p>
+                   <p>Narrow  (211)</p>
+                </div> 
+            
+
+
+            <div>
+                <button class="MaterialType" >Men's Athletic Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductAthleticStyle" class="mensShoesType">
+               <p> Work & Safety  (1,376)</p>
+               <p>Chukkas  (1,163)</p>
+               <p>Western  (983)</p>
+               <p>Ankle  (867)</p>
+               <p>Rain & Snow  (504)</p>
+               <p>Hiking  (497)</p>
+               <p>Motorcycle  (89)</p>
+               <p>Mid-Calf  (6)</p>
+            </div> 
+
+            <div>
+                <button class="MaterialType" >Occasion  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductOccasion" class="mensShoesType">
+               <p> Casual  (1,772)</p>
+               <p>Dress  (1,873)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType">Men's Slip-On Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSlipOnStyle" class="mensShoesType">
+               <p> Loafers  (4,426)</p>
+               <p>Boat Shoes  (426)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType">Men's Sandal Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSandalStyle" class="mensShoesType">
+               <p> Slides  (1,767)</p>
+               <p>Flip Flops  (522)</p>
+               <p>Fisherman  (134)</p>
+               <p>Sport  (74)</p>
+               <p>Water Shoes  (12)</p>
+               <p>Thongs  (18)</p>
+               <p>Slingback  (8)</p>
+            </div> 
+
+
+
+            <div>
+                <button class="MaterialType">Men's Slipper Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSlipperStyle" class="mensShoesType">
+               <p>  Moccasins  (943)</p>
+               <p>Slip-On  (265)</p>
+               <p>Booties  (79)</p>
+               <p>Flip Flops  (16)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType" >Brand  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductBrand" class="mensShoesType">
+               <p> Nunn Bush  (3,395)</p>
+               <p>Deer Stags  (2,566)</p>
+               <p>Nike  (1,696)</p>
+               <p>adidas  (1,937)</p>
+               <p>Thomas  (1,512)</p>
+               <p>Skechers  (1,294)</p>
+               <p>Puma  (1,016)</p>
+               <p>Lugz  (1,161)</p>
+               <p>Clarks  (997)</p>
+               <p>Dockers  (998)</p>
+               <p> + See MoreBrand</p>
+            </div>
+
+            <div>
+                <button class="MaterialType">Stores  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductStores" class="mensShoesType">
+               <p>  Kohl's  (16,538)</p>
+               <p>JCPenney  (10,814)</p>
+               <p>Macy's  (3,321)</p>
+               <p>UnbeatableSale  (2,785)</p>
+               <p>KixRx  (2,161)</p>
+               <p>RuzeShoes  (1,955)</p>
+               <p>BHFO  (1,535)</p>
+               <p>Azura Runway  (1,231))</p>
+               <p>Rue La La  (1,202)</p>
+               <p>Ranch & Home  (1,161)</p>
+               <p> + See MoreBrand</p>
+            </div>
+
+
+            <div>
+                <button class="MaterialType">Price Range  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductPriceRange" class="mensShoesType">
+               <p> $95.00 and Below  (264)</p>
+               <p>$95.01 - $130.00  (255)</p>
+               <p>$130.01 - $195.00  (243)</p>
+               <p>$195.01 - $300.00  (243)</p>
+               <p>$300.01 and Above  (232)</p>
+            </div>
+
+
+            <div id="minmax">
+                <input type="text" placeholder="Min" style="font-style: italic;">
+                <input type="text" placeholder="Max" style="font-style: italic;">
+                <button>></button>
+            </div>
+
+            <div id="feedback">
+                <p>Tell us how we are doing</p>
+                <p>We constantly strive to improve 
+                    the customer experience
+                     and we value your feedback.</p>
+                <textarea name="" id="" cols="30" placeholder="Enter feedback here. Include your email address if you would like to be contacted." style="font-style:Italic ;" rows="7"></textarea>
+                <button>Submit feedback</button>
+
+                <h2>Thanks!</h2>
+                <p>Your feedback is appreciated and reviewed by our team.</p>
+
+            </div>
+
+
+
+            
+        </div>
+
+            <div id="rightPortion">
+                <div id="container">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
+<script src="MainProduct.js"></script>
+<script src="https://kit.fontawesome.com/33afe5378a.js" crossorigin="anonymous"></script>
