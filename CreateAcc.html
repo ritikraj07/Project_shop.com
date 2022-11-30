@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="CreateAcc.css" />
+  </head>
+  <body>
+    <div>
+        <h1>Create an account</h1>
+    <form action="SignIn.html" id="createAccform">
+      <p>* Indicates required field</p>
+      <div>
+         <div>
+          <div>
+            <label for="">First name*</label><br />
+            <input type="text" placeholder="First name here" style="font-style:italic"  required/>
+          </div>
+          <div>
+            <label for="">Last name*</label><br />
+            <input type="text" placeholder="Last name here" style="font-style:italic"  required/>
+          </div>
+        </div>
+        
+        <div>   
+          <label for="">Email address*</label><br>
+          <input type="email"  id="email" placeholder="yourname@example.com" style="font-style:italic" required/>
+        </div>
+        <div>
+            <div>
+                <label for="">Password* (At least 7 characters)</label><br />
+                <input type="password" id="password" placeholder="Please enter a minimum of 7 characters" style="font-style:italic" required autocomplete="off"/>
+            </div>
+            <div>
+                <label for="">Confirm password*</label><br>
+                <input type="password" id="confirmPass" placeholder="Please reenter the password" style="font-style:italic" required autocomplete="off"/>
+            </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Text Message (SMS) Alerts: (Optional)</h2>
+        <div>
+            <input type="checkbox" id="checkbox" />
+        <label for=""
+          >Do you want to sign up for Shopper alerts from SHOP.COM? (Message and
+          data rates may apply.)</label
+        >
+        </div>
+        
+        <div>
+            <label for="">Enter a mobile number</label><br>
+            <input type="text" name="" id="" placeholder="Please enter your 10 digit phone number (i.e. 999 999 9999)" style="font-style:italic"/>
+        </div>
+      </div>
+
+      <div>
+        <div>
+        <label for=""
+          >Were you referred by a friend? <br> Enter their email address (Optional)
+        </label><br>
+        
+        <input type="text" />
+        </div>
+        
+        <p>Your Shop Consultant is SHOP.COM</p>
+      </div>
+
+      <div>
+        <h2>Email deals: (Optional)</h2><br>
+        <input type="checkbox" name="" id="checkbox" />
+        <label for=""
+          >Do you want to sign up for sweet email offers and discounts from
+          SHOP.COM?</label
+        ><br>
+        <input type="checkbox" name="" id="checkbox" />
+        <label for=""
+          >Do you want to sign up for sweet email offers and discounts from
+          MarketAmerica.com and its brands?</label
+        >
+      </div>
+
+      <div>
+        <label for="">Also, please confirm you are not a robot:</label><br>
+        <div>
+            <input type="checkbox" name="" id="checkbox" />
+            <label for="">I'm not a robot</label>
+            <img src="https://media.wired.co.uk/photos/606d9f599a15f73a597a1a6b/master/w_1600,c_limit/aaaauntitled-1.jpg" alt="">
+        </div>
+      </div>
+
+      <button id="submit">Create your new account</button>
+      <p>
+        By creating an account, you are agreeing to our <a href="">Terms of Service</a>  and
+        <a href="">Privacy Policy</a>.
+      </p>
+    </form>
+    </div>
+    
+  </body>
+</html>
+
+<script>
+    document.getElementById("submit").addEventListener("click",getData);
+
+    var registeredUser = JSON.parse(localStorage.getItem("registeredUser")) || [];
+
+    function getData(){
+
+        var email = document.getElementById("email").value;
+        var password= document.getElementById("password").value;
+        var confirmPassword= document.getElementById("confirmPass").value;
+        var user={email: email, password: password};
+        if(password==confirmPassword &&  email!="" && password!=""){
+            registeredUser.push(user);
+            localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
+            
+        }
+        else{
+            alert("Uh oh! Your password and confirm password don't match!");
+        }
+        
+    }
+</script>
+
