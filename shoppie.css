@@ -1,0 +1,608 @@
+#pehla {   
+    display:flex;
+   margin: auto;
+    /* border: solid;    */
+     text-align: center;
+     color: #545871!important;
+     box-sizing: border-box;
+   
+     justify-content: center;
+     background-color: white;
+     font-family: Roboto,Arial,Helvetica,sans-serif;
+    
+     
+     
+}
+#pehla h5{
+margin-top: 22px;
+}
+
+
+
+#pehlabutton {
+    font-size: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 12px;
+    width: 60px;
+    height: 20px;
+    margin-left: 5px;
+
+}
+#signin {
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    /* -webkit-font-smoothing: antialiased; */
+    font-style: normal;
+    font-weight: 400;
+       color: #202340;
+       
+    font-size: 1rem;
+}
+#dusra a {
+bottom: auto;
+margin-left: 2px;
+font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+#dusrabutton {
+    
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+     line-height: 1.1em;
+    min-height: 40px;
+    padding: 0.65em; 
+    text-align: center;
+   
+    background-position: center right;
+
+
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #414467;
+    border: 1px solid #414467;
+    margin-bottom: 30px;
+}
+
+#dusra {
+    margin-top: 0.2vw;
+    padding: 1.3vw;
+    display: grid;
+    gap: 1.5vw;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    
+}
+#dusra > div {
+    /* grid-row:auto ; */
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding: 1.5vw 1.5vw 0.8vw 1.5vw;
+    margin: auto; */
+    padding: 1.5vw 1.5vw 0.8vw 1.5vw;
+    text-align: center;
+    background-color: white;
+   
+}
+#dusra img{
+    width:100%;
+    
+}
+#dusra h4 {
+    margin-bottom: auto;
+    font-size: 20px;
+}
+#signin {
+display: flex;
+}
+#mushkil {
+    display: flex;
+    flex-direction: column;
+}
+#mushkil > div {
+    padding: 1vw;
+    background-color: #f0f1f7;
+}
+
+#mushkil img {
+    width: 15vw;
+}
+#signin {
+display: flex;
+flex-direction: column;
+}
+.tisraa  {
+    /* font-family: Roboto,Arial,Helvetica,sans-serif;
+    height: 450px; */
+    /* text-align: center; */
+    
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 30px; */
+    /* background-color: gray; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: green solid; */
+    
+}
+.tisra {
+    text-align: center;
+    /* border: red solid; */
+    margin-bottom: -20px;
+    padding: 10px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+#tisraimg {
+width: 100%;
+height: 450px;
+}
+#righta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+#righta > div {
+    background-color: #f0f1f7;  
+}
+#righta img{
+    width: 92%;
+    background-color: #f0f1f7;
+} 
+#rightb {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+#rightb img {
+    width: 98%;
+    background-color: #f0f1f7;
+}
+
+#chautha {
+    width: 100%;
+    height: 200px;
+    /* border: solid; */
+    margin-bottom: -62px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+   
+
+}
+
+#wo {
+    width:120px;
+    height: 120px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -1px;
+}
+#pachwa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+#pachwa h4,h5{
+    margin-top: -1px;
+    
+}
+#pachwa p{
+    margin-top: -15px;
+   
+}
+#pachwa img {
+     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+    
+}
+
+#chathaa {
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* border: solid; */
+    height: 170px;
+    text-align: center;
+  
+    font: inherit; 
+}
+#chatha img {
+    height: 100px;
+    width: 100px;
+}
+#chathaa img {
+   color: #2e2c38;
+    
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0; 
+   
+   
+    list-style-type: none;
+    border: 10px solid rgba(84,88,113,.3);
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+#chatha h2{
+text-align: center;
+}
+#chatha {
+width: 100%;
+height: 260px;
+/* border: solid; */
+font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+/* #satwa {
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
+} */
+
+ #satwaa  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+} 
+#satwaa img {
+    width: 200px;
+    height: 200px;
+} 
+#athwa {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-around; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+#athwa img {
+    width: 96%;
+}
+#naowa  img{
+    height: 100px;
+    width: 100px;
+}
+#naowaa  {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* border: solid; */
+    height: 170px;
+    text-align: center;
+  
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
+}
+#naowaa img {
+color: #2e2c38;
+    
+box-sizing: border-box;
+ margin: 0;
+padding: 0; 
+
+
+list-style-type: none;
+border: 5px solid rgba(84,88,113,.3);
+border-radius: 50%;
+width: 150px;
+height: 150px;
+}
+#naowa h1{
+    text-align: center;
+ }
+
+ #naowa {
+    width: 100%;
+    height: 280px;
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ 
+ #daswaa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #daswaa img {
+ height: 300px;
+ width: 95%;
+ 
+ }
+ #gyara {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-around; */
+    /* border: solid; */
+    margin-top: 40px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #gyara img {
+    width: 96%;
+    justify-content: space-between;
+ }
+
+    
+ 
+ #barab{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #bara  {
+width: 100%;
+ }
+ #bara img {
+    width: 95%;
+ }
+
+
+ #collection {
+    width: 500px;
+    height: 500px;
+ }
+
+ 
+
+ #teraa img {
+    width: 300px;
+    height: 300px;
+    
+ }
+ #tera {
+    width: 100%;
+    height: 600px;
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #terab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+ #terab img {
+    width: 100%;
+    height: 300px;
+ }
+ #motives {
+    width: 100%;
+    height: 100px;
+ }
+
+ #motives {
+    width: 500;
+    height: 500px;
+ }
+
+
+ #chowdab img {
+    width: 400px;
+    height: 400px;
+    
+ }
+ #chowda {
+    /* width: 100%;
+    height: 600px; */
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+   
+ }
+ #chowdab {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+
+ }
+
+ /* #gifting {
+    width: 500;
+    height: 500px; */
+ 
+ #pandra {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+ #pandra img {
+    width: 98%;
+    
+ }
+ #sola {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 100%; */
+    margin-top: 15px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #sola img {
+    width: 97%;
+ }
+ #sola > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+ }
+ 
+ #satrab img {
+    width: 400px;
+    height: 400px;
+    
+ }
+ #satra {
+    /* width: 100%;
+    height: 600px; */
+    /* border: solid; */
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ #satrab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+
+ #boost {
+    width: 500;
+    height: 500px;
+ }
+ #atharaa {
+display: grid;
+grid-template-columns: repeat(4,1fr);
+/* border: solid; */
+text-align:center;
+font-family: Roboto,Arial,Helvetica,sans-serif;
+
+ }
+ #athara img{
+  width: 97%;
+  
+ }
+ #unisha {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+ }
+ #unish {
+    text-align: center;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ 
+ 
+
+ @media only screen and (min-width:768px) and (max-width:1224px) {
+   #dusra {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #tisra {
+    /* display: block; */
+   
+   }
+   .tisraa {
+    grid-template-columns: repeat(1, 1fr);
+   }
+   #pachwa {
+    grid-template-columns: repeat(2, 1fr);
+   
+   }
+   #chathaa {
+    grid-template-columns: repeat(3, 1fr);
+   }
+   #satwaa {
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: 10% 0 0 0; */
+   }
+   #satwa {
+    margin-top: 300px;
+   }
+   #athwa {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #naowaa {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10% 0 0 0;
+   }
+   #naowa {
+    margin-bottom: 500px;
+   }
+   #daswaa {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #gyara {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #barab {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #terab {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #chowdab {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #pandra {
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   #sola {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #satrab {
+    grid-template-columns: repeat(2, 1fr);
+  }
+   #atharaa {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   #unisha {
+    grid-template-columns: repeat(2, 1fr);
+   }
+ 
+ }
+ @media only screen and (min-width:7px) and (max-width:767px) {
+    #dusra {
+        grid-template-columns: repeat(2, 1fr);
+       }
+       #tisra {
+        display: block;
+       }
+       #pachwa {
+        grid-template-columns: repeat(2, 1fr);
+       }
+       #chathaa {
+        grid-template-columns: repeat(2, 1fr);
+       }
+       #satwaa {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10% 0 0 0;
+       }
+       #satwa {
+        margin-top: 500px;
+       }
+       #athwa {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #naowaa {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10% 0 0 0;
+       }
+       #naowa {
+        margin-bottom: 1100px;
+       }
+       #daswaa {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #gyara {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #barab {
+        grid-template-columns: repeat(1, 1fr);
+        
+       }
+       #terb {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #chowdab {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #pandra {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #terb {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #sola {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #satrab {
+        grid-template-columns: repeat(1, 1fr);
+      }
+       #atharaa {
+        grid-template-columns: repeat(1, 1fr);
+       }
+       #unisha {
+        grid-template-columns: repeat(1, 1fr);
+       }
+ }
