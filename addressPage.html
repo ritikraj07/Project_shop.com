@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addressPage.css">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">
+</head>
+
+<body>
+    <div id="navbar2">
+
+    </div>
+    <div id="body">
+        <h1 id="heading_ship">Shipping Address Form</h1>
+        <p id="fiels">* Indicates required field</p>
+        <div id="form">
+            <div class="label">
+                <label>First name*<br>
+                    <input id="first_name" type="text" placeholder="First name here" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>Last name*<br>
+                    <input id="last_name" type="text" placeholder="Last name here" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>Address 1* <br>
+                    <input id="address" type="text" placeholder="Please enter street address here" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>Address 2<br>
+                    <input type="text" id="address2" placeholder="">
+                </label>
+            </div>
+            <div class="label">
+                <label>City*<br>
+                    <input id="city" type="text" placeholder="City here" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>State/Province*<br>
+                    <select id="state">
+                        <option value="Alaska">Alaska</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="California">California</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Lowa">Lowa</option>
+                        <option value="DistrictofColumbia">District of Columbia</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Arizona">Arizona</option>
+                    </select>
+                </label>
+            </div>
+            <div class="label">
+                <label>Zip/Postal*<br>
+                    <input id="zip" type="text" placeholder="zip code" required>
+                </label>
+            </div>
+
+
+        </div>
+        <div id="form2">
+            <div id="box2">
+                <input type="checkbox" id="checkbox1"> <label id="_box" for="checkbox1"> This address is a PO Box
+                </label>
+            </div>
+
+            <div id="phone">
+                <label>Phone*<br>
+                    <input type="text" id="phoneNumber" placeholder="Please enter your 10 digit phone number">
+                </label>
+            </div>
+            <div id="phone123">
+                <button id="cancel">Cancel</button>
+                <button id="save" onclick="SubmitAdd()">Save</button>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+
+    <div id="addPageFooter">
+        <div>
+            <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. (famos-p11)</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+
+        <div>
+            <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
+<script>
+
+ function SubmitAdd(){
+    var firstname=document.getElementById("first_name").value;
+    var lastname=document.getElementById("last_name").value;
+    var address =document.getElementById("address").value;
+    var address2=document.getElementById("address2").value;
+    var city= document.getElementById("city").value;
+    var state= document.getElementById("state").value;
+    var zip=document.querySelector(".label").value;
+    var phoneNumber=document.getElementById("phoneNumber").value;
+
+    var add={firstName: firstname, lastname: lastname, address: address, address2: address2, city: city, state: state, zip: zip, phoneNumber: phoneNumber};
+
+    localStorage.setItem("Address",JSON.stringify(add));
+ }
+
+</script>
