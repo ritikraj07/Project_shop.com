@@ -66,9 +66,7 @@ h1,h2,h3,h6,p{
     display: flex;
     justify-content: space-between;
 }
-#pro_appender{
-    /* border: 1px solid black; */
-}
+
 #Product_{
     /* border: 2px solid yellow; */
     padding: 10px;
