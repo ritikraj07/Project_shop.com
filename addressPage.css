@@ -1,0 +1,135 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+
+}
+#body{
+    
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    margin: 5% 10% ;
+}
+#heading_ship{
+    color:#202340;
+    font-family: 'Roboto','Arial';
+    margin-left:5.7%;
+    padding-top: 15px;
+}
+#fiels{
+    font-size: 14px;
+    font-family: 'Roboto','Arial';
+    color:#545871;
+    margin-left:5.7%;
+    font-weight: 600;
+
+}
+#form{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    justify-content: space-around;
+}
+.label{
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+    
+}
+#form input{
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 8px;
+    font-style: italic;
+    width: 95%;
+    margin-bottom: 25px;
+}
+select{
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 8px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bolder;
+
+}
+
+#_box{
+    display: flex;
+    margin-left: 10px;
+    padding: 5px;
+}
+#phone{
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+#phone input{
+    width: 30%;
+    font-size: 18px;
+    padding: 12px;
+}
+
+#form2{
+    margin: 0  0 0 5.5%;
+}
+
+#box2{
+    display: flex;
+    
+}
+#box2 label{
+    font-size: 18px;
+}
+#checkbox1{
+    /* position: relative; */
+      cursor: pointer;
+}
+ #checkbox1:before {
+    /* display: block; */
+    /* position: absolute; */
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+
+ #phone123{
+     display: flex;
+     margin-top: 2%;
+ }
+ #cancel{
+   color:#202340 ;
+   font-weight: 600;
+   border-radius: 30px;
+   font-size: 110%;
+   padding: 1% 2%;
+
+ }
+ #save{
+     background-color: #202340;
+     color: white;
+     margin-left: 100px;
+     padding: 7px;
+     width: 250px;
+     border-radius: 30px;
+     border: none;
+ }
+
+#addPageFooter img{
+    width: 50%;
+    /* border: 10px solid rgb(191, 187, 187); */
+    border-radius: 40px;
+    padding: 3%;
+    border-left: 10px solid blue;
+}
+
+#addPageFooter{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(156, 156, 156);
+    padding: 1.5%  0 1% 1%;
+    align-items: center;
+}
