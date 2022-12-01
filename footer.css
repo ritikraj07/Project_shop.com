@@ -70,18 +70,134 @@
     width: 200px;
     /* height: 100px; */
 }
-@media only screen and (min-width:768px) and (max-width: 1024px) {
-    /* body {
-      background-color: lightblue;
-    } */
+#footer2{
+    display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+    #footer{
+        display: none;
+    }
+    #footer2{
+        display: block;
+    }
+    #fot_1{
+        /* border: 1px solid rgb(0, 26, 255); */
+        margin: 10px -10px;
+        padding: 20px 0 10px 25px;
+        background-color: #2e3451;
+        font-size: larger;
+        color: white;
+    }
+    #fot_1 button{
+        /* border: 1px solid rgb(210, 4, 4); */
+        font-size: 110%;
+        border-radius: 20px;
+        border: none;
+        margin-left: 10px;
+    }
+    #fot_1 button:hover{
+        background-color:#2e3451;
+        color: white;
+        cursor: pointer;
+    }
+    #fot_2{
+        background-color: #545871;
+        color: white;
+        margin: -10px;
+        padding: 10px;
+    }
+    #footer2 i{
+        width: 50px;
+        font-size: xx-large;
+        color: white;
+      
+    }
+    #fot_2 p{
+        font-size: large;
+    }
+    #fooder_details2 {
+        background-color: #f0f1f7 ;
+        margin: -5px -15px;
+        padding: 10px 20px;
+    }
+    #footer_last{
+        background-color: #f0f1f7 ;
+        margin: -5px -15px;
+        padding: 10px 20px;
+    }
+    #footer_last div:first-child{
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
+    
   }
   
 
 
 
   @media only screen and (min-width:7px) and (max-width: 767px) {
-    /* body {
-      background-color: rgb(70, 61, 74);
-    } */
+    #footer{
+        display: none;
+    }
+    #footer2{
+        display: block;
+    }
+    #fot_1{
+        /* border: 1px solid rgb(0, 26, 255); */
+        margin: 10px -10px;
+        padding: 20px 0 10px 25px;
+        background-color: #2e3451;
+        font-size: larger;
+        color: white;
+    }
+    #fot_1 button{
+        /* border: 1px solid rgb(210, 4, 4); */
+        font-size: 110%;
+        border-radius: 20px;
+        border: none;
+        margin-left: 10px;
+    }
+    #fot_1 button:hover{
+        background-color:#2e3451;
+        color: white;
+        cursor: pointer;
+    }
+    #fot_2{
+        background-color: #545871;
+        color: white;
+        margin: -10px;
+        padding: 10px;
+    }
+    #footer2 i{
+        width: 50px;
+        font-size: xx-large;
+        color: white;
+      
+    }
+    #fot_2 p{
+        font-size: large;
+    }
+    #fooder_details2 {
+        background-color: #f0f1f7 ;
+        margin: -5px -15px;
+        padding: 10px 20px;
+    }
+    #footer_last{
+        background-color: #f0f1f7 ;
+        margin: -5px -15px;
+        padding: 10px 20px;
+    }
+    #footer_last div:first-child{
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
   }
   

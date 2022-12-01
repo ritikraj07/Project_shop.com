@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.com Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div id="snavbar" >
+        <div>
+            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg" alt="">    
+        </div>
+        <div>
+            <p><a href="index.html">Continue Shopping</a></p>
+        </div>
+    </div>
+    <div id="containerCarT">
+       <div id="shipping_yourcart">
+        
+        <div><p id="YourCart">Checkout </p></div>
+        <div><p id="total_shipping">Order Total: <span id="order_total_ship"> $24</span> </p></div>
+       </div>
+        <div id="shipping_loca">
+            <img src="paymentbar.png" alt="">
+        </div>
+        <hr>
+        <div id="left_container_cart">
+            <div id="detatil_part_cart">
+                <h3>Select Payment Method </h3>
+            
+                <div id="pro">
+                    <div class="pro_cls">
+                        <div><input type="checkbox"></div>
+                        <div>
+                           <p>Enter payment method</p> 
+                        </div>
+                        <div>
+                            <img src="paymethod.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="pro_cls">
+                        <div><input type="checkbox"></div>
+                        <div>
+                            <img src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="pro_cls">
+                        <img src="https://img.shop.com/Image/local/images/cc/SezzlePaymentBtn_Small-purple.svg" alt="">
+                    </div>
+                    <hr>
+                    <div class="pro_cls">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" alt="">
+                    </div>
+                    <hr>
+                    <div class="pro_cls">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png" alt="">
+                    </div>
+                    <hr>
+                    <div class="pro_cls"><img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936" alt=""></div>
+                </div>
+                <div id="bot_">
+
+                    <div style="width: 400px; hight:300px">
+                        <div>
+                            <h2>Shipping</h2>
+                        </div>
+                        <div id="user_details_">
+                            <p id="name"> Ritik Raj</p>
+                            <p id="city">Mumbai</p>
+                            <p id="add"> Mumbai Maha, Ind, 400004</p>
+                                <div class="flex-do">
+                                    <div id="phone-no">Phone: 9693452199</div>
+                                    <div><a href="">Change Address </a></div>
+                                </div>
+                        </div>
+                       </div> 
+
+                       <div id="lastone">
+                        <h3>Coupon/Gift Card</h3>
+                        <h4>Coupon</h4>
+                        <div class="lastcls">
+                            <div><input type="text" id="couponcheck" placeholder="Coupon Code"></div>
+                            <div><button onclick="ApplyCoupon()">Apply</button></div>
+                        </div>
+                        <div class="lastcls">
+                            <div>Gift Cart</div>
+                            <div>PIN</div>
+                        </div>
+                        <div class="lastcls">
+                            <div><input type="text" name="" id="" placeholder="Gift Card Number"></div>
+                            <div><input type="text" placeholder="Pin"></div>
+                            <div><button>Apply</button></div>
+                        </div>
+                        
+                       </div>
+
+                </div>
+                   
+                   
+
+            </div>
+            <div id="total_section">
+               
+               <div>
+                <h1>Order Summary </h1>
+               </div>
+               <hr>
+               <div id="laksd">
+                    <div class="flex-do">
+                        <div>Items Subtotal:</div>
+                        <div id="total_price">0</div>
+                    </div>
+
+                    <div class="flex-do">
+                        <div>Tax total:</div>
+                        <div >$1.00</div>
+                    </div>
+
+                    <div class="flex-do">
+                        <div>Shipping:</div>
+                        <div>$12.43</div>
+                    </div>
+                    <hr>
+                    <div class="flex-do">
+                        <div>Order Total</div>
+                        <div id="order_total_shi">0</div>
+                    </div>
+                    
+                    <div id="to_price" class="flex-do">
+                        <div> <img class="mid_p" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="">
+                             Cashback earned on this order:</div>
+                        <div>$0.23</div>
+                    </div>
+                    <hr id="hr_wod">
+                    <div id="last_t">
+                        <div class="flex-do">
+                            <div><input type="checkbox"></div>
+                         <div><h3>Get text alerts for this order</h3></div>
+                        </div>
+                        <p style="margin-top: 30px;">Mobile Number</p>
+                        <hr>
+                        <h4 id="mobil">989394923</h4>
+                        <p>Message and data rates may apply.</p>
+                        <p>Mobile number can be changed in your <a href="">Profile</a> .</p>
+        
+                    </div>
+
+               </div>
+               <div class="flex-do">
+                    <div> <a href="">Shipping</a> </div>
+                    <div><button>Place Order</button></div>
+               </div>
+               <div id="last_t">
+                    <p>Let us know how we are doing <a href="">Send Feedback</a></p>
+                    <h2>Thanks!</h2>
+                    <p>Your feedback is appreciated and reviewed by our team.</p>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
+<script>
+
+    var payment = JSON.parse(localStorage.getItem('cart'))||[]
+    display(payment)
+    function display(data){
+        
+        var totalprice = 0
+        data.map(function(element){
+            // console.log(element)
+            var par = ''
+            // console.log(element.price)
+            for(var i = 1; i<element.price.length; i++){
+                par+=element.price[i]
+                
+            }
+            totalprice+= +par
+            console.log(par)
+        })
+        var total = +localStorage.getItem("totalPrice")+ +13.43
+        document.getElementById('total_price').innerText="$"+ total.toFixed(2)
+        document.getElementById('order_total_ship').textContent='$' +total.toFixed(2)
+        document.getElementById('order_total_shi').textContent='$' + total.toFixed(2)
+    }
+    var couponapplied = false;
+    function ApplyCoupon(){
+        var cp= document.querySelector('#couponcheck').value
+        if(couponapplied){
+            alert('Coupon already applied')
+        }
+        else if (cp=='masai30'){
+            var totalprice = 0
+            var total = +localStorage.getItem("totalPrice")+ +13.43
+            total=total*0.8
+            document.getElementById('total_price').innerText="$"+ total.toFixed(2)
+             document.getElementById('order_total_ship').textContent='$' + total.toFixed(2)
+            document.getElementById('order_total_shi').textContent='$' +total.toFixed(2)
+            localStorage.setItem('totalPrice', total)
+            couponapplied=true
+        }
+        else{
+            alert('Coupon Not Find')
+        }
+    }
+
+
+
+    // window.onscroll = function() {mynavFunction()};
+    // var nav = document.getElementById("snavbar");
+    // var stick = nav.offsetTop;
+    // function mynavFunction() {
+    //   if (window.pageYOffset >= stick) {
+    //     nav.classList.add("sticky")
+    //   } else {
+    //     nav.classList.remove("sticky");
+    //   }
+    // }
+    function OpenSignin(){
+        window.location.href='SignIn.html'
+    }
+   
+    function goHome(){
+        window.location.href='index.html'
+    }
+    function OpenCartPage(){
+        window.location.href='cart.html'
+    }
+    </script>

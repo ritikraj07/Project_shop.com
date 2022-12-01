@@ -6,8 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create New Account</title>
     <link rel="stylesheet" href="CreateAcc.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="shoppie.css" />
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div id="overlay_left">
+      <div onclick="offLeft()" id="btndiv_overlay"><Button><i class="fa-regular fa-circle-xmark"></i></Button></div>
+      <div id="div1overlay">
+          <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+          <h2>SHOP.COM</h2>
+      </div>
+      <div id="div2overlay">
+          <h3>Categories</h3>
+          <p>Cyber week Specials</p>
+          <p>Gift Center</p>
+          <p>SHOP.COM Home Warranties</p>
+          <p>OneCart Exclusive Deals</p>
+          <p>Clothes</p>
+          <p>Shoes</p>
+          <p>Beauty</p>
+          <p>Shoes</p>
+          <p>Beauty</p>
+          <p>Home</p>
+          <p>Electronics</p>
+          <p>Health & Nutrition</p>
+          <p>Jewelry</p>
+          <p>Kids</p>
+          <p>Pet Supplies</p>
+          <p>Food & Drink</p>
+          <p>Sports</p>
+          <P>Travel</P>
+          <P>SHOP Travel</P>
+          <P>All Stores</P>
+          <P>Exclusive Brands</P>
+      </div>
+  </div>
+  <div id="navbar">
+      <div id="navbar_static">
+          <p>Buy now, pay later! Use Sezzle this Holiday Season!   <a href="">Learn More</a> </p>
+      </div>
+      <div id="nav">
+          <div id="navMain" >
+              <div>
+                  <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                  <div id="searching_box">
+                      <select class="f4cur" name="navFilter" id="navFilter">
+                          <option value="All-Departments">All Departments</option>
+                          <option value="Auto">Auto</option>
+                          <option value="Baby">Baby</option>
+                          <option value="Beauty">Beauty</option>
+                          <option value="Books">Books</option>
+                          <option value="Business">Business</option>
+                          <option value="Cameras">Cameras</option>
+                          <option value="Clothes">Clothes</option>
+                      </select>
+                      <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                      <button onclick="goToProductPage()" class="f4cur" type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                  <div><img class="f4cur" id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
+              </div>
+              <div id="lastnav">
+                  <div><img onclick="menuLeft()" class="f4cur" src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                  <!-- <div><button><i class="fa-solid fa-bars"></i></button></div> -->
+                  <div id="navLink">
+                      <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
+                      <a href="ExclusiveBrands.html">Exclusive Brands</a>
+                      <a href="">Stores</a>
+                      <a href="">Deals</a>
+                      <a href="">Shop Travel</a>
+                      <a href="">Departments</a>
+                      <a href="">ShopBuddy</a>
+                      <a href="">SHOP Local</a>
+                  </div>
+                  <div>
+                      <img class="f4cur" onclick="OpenSignin()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                      <img class="f4cur" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                      <img class="f4cur" onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                  </div>
+              </div>
+
+          </div>
+          <div id="navformid">
+              <div>
+                  <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+              </div>
+              <div>
+                  <button onclick="menuLeft()"><i class="fa-sharp fa-solid fa-bars"></i></button>
+              </div>
+              <!-- <div> -->
+                  <div id="searching_box">
+                      <select name="navFilter" id="navFilter">
+                          <option value="All-Departments">All Departments</option>
+                          <option value="Auto">Auto</option>
+                          <option value="Baby">Baby</option>
+                          <option value="Beauty">Beauty</option>
+                          <option value="Books">Books</option>
+                          <option value="Business">Business</option>
+                          <option value="Cameras">Cameras</option>
+                          <option value="Clothes">Clothes</option>
+                      </select>
+                      <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                      <button onclick="goToProductPage()" type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+              <!-- </div> -->
+              <div><button><i class="fa-solid fa-user"></i></button></div>
+              <div>
+                  <button><i class="fa-solid fa-rotate-left"></i></button>
+              </div>
+              <div>
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+      </div>
+  </div>
+  </div>
+  
     <div>
         <h1>Create an account</h1>
     <form action="SignIn.html" id="createAccform">
@@ -99,6 +216,51 @@
     </form>
     </div>
     
+    <div id="footer">
+      <div style="background-color: rgb(84,88,113);">
+          <div id="footer-para">
+             <div> <p>Link To This Page & Tell All Your Friends</p></div>
+              <div><button>copy Link</button></div>
+          </div>
+          <div id="footer_2nd">
+              <div> 
+                  <p>About Us | Help | Accessibility Statement | Contact Us | Partner With Us | Services | Country/Region | Connect | Own Your Own SHOP Site</p>
+              </div>
+              <div>
+                  <i class="fa-regular fa-envelope"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+          </div>
+      </div>
+      <div style="background-color: rgb(240,241,247);">
+          <div id="fooder_details">
+              <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+              <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+              <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+          </div>
+          <div id="footer_last">
+              <div>
+                  <div><img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt=""></div>
+                  <div><img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt=""></div>
+                  <div><img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt=""></div>
+                  <div><img src="https://www.shop.com/feo-cdn/0/q/U9W4qM8Kw.webp" alt=""></div>
+                  <div><img src="https://www.shop.com/feo-cdn/5/F/ZEg9H4vt0.png" alt=""></div>
+                  <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
+                  <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
+                  <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
+                  
+                 
+              </div>
+              <div>
+                  <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+              </div>
+          </div>
+      </div>
+
+  </div>
+    
   </body>
 </html>
 
@@ -125,3 +287,73 @@
     }
 </script>
 
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+     
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+
+
+
+  function OpenSignin(){
+      window.location.href='SignIn.html'
+  }
+
+  </script>
+  <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
+  <script>
+    function goToProductPage(){
+        var search_pro = document.getElementById('Search').value 
+        if(search_pro=='shoe' ||search_pro=='Shoe' || search_pro=='Shoes' || search_pro=='shoes' || search_pro=='boots' || search_pro=='Boots' ){
+            window.location.href='MainProduct.html'
+        }else{
+            alert("Product Not Found!")
+        }
+    }
+
+
+    window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+        // alert('hello')
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+
+
+    function OpenSignin(){
+        window.location.href='SignIn.html'
+    }
+   
+    function goHome(){
+        window.location.href='index.html'
+    }
+    function OpenCartPage(){
+        window.location.href='cart.html'
+    }
+    function menuLeft(){
+        document.getElementById("overlay_left").style.display = "block";
+        document.getElementById('navbar').setAttribute('class', 'backup')
+        document.getElementById('container_index').setAttribute('class', 'backup')
+
+    }
+    function offLeft() {
+        document.getElementById("overlay_left").style.display = "none";
+        document.getElementById('navbar').classList.remove('backup')
+        document.getElementById('container_index').classList.remove('backup')
+}
+    </script>
+    <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>

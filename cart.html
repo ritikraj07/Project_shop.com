@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.com Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar_static">
+            <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a href="">Terms Apply</a> </p>
+        </div>
+        <div id="nav">
+            <div id="navMain" >
+                <div>
+                    <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                    <div id="searching_box">
+                        <select name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <!-- <button>Q</button> -->
+                        
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <!-- <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""> -->
+                        
+                    </div>
+                    <div><img id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
+                </div>
+                <div id="lastnav">
+                    <div><img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                    <!-- <div><button><i class="fa-solid fa-bars"></i></button></div> -->
+                    <div id="navLink">
+                        <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
+                        <a href="ExclusiveBrands.html">Exclusive Brands</a>
+                        <a href="">Stores</a>
+                        <a href="">Deals</a>
+                        <a href="">Shop Travel</a>
+                        <a href="">Departments</a>
+                        <a href="">ShopBuddy</a>
+                        <a href="">SHOP Local</a>
+                    </div>
+                    <div>
+                        <img onclick="OpenSignin()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                        <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                        <img onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div id="navformid">
+                <div>
+                    <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+                </div>
+                <div>
+                    <button><i class="fa-sharp fa-solid fa-bars"></i></button>
+                </div>
+                <!-- <div> -->
+                    <div id="searching_box">
+                        <select name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                <!-- </div> -->
+                <div><button><i class="fa-solid fa-user"></i></button></div>
+                <div>
+                    <button><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div id="containerCarT">
+        <p id="YourCart">Your Cart</p>
+        <div id="left_container_cart">
+            <div id="detatil_part_cart">
+                <h6>Shipment from BHFO</h6>
+                <hr>
+                <div id="pro_appender">
+               
+                </div>
+            </div>
+            <div id="total_section">
+                <h1>Order Total</h1>
+                <hr>
+                <div id="first_">
+                    <div><p>Subtotal:</p></div>
+                    <div id="price">$31.75</div>
+                </div>
+                <div id="second_">
+                    <p>or 4 interest-free payments of <span id="e_l_pr">$7.12</span> with <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> </p> 
+                   
+        
+                    <p><a style="color:rgb(32, 35, 64);" href="">Continue Shoping</a></p>
+                </div>
+                <div id="third_">
+                    <div>
+                    <input type="text" name="ZIP Code" id="" placeholder="ZIP Code">
+                    <button>Estimate Shipping</button>
+                    </div>
+                </div>
+                <div id="forth_">
+                    <div><button onclick="OpenShipping()">Proceed to Checkout</button></div>
+                </div>
+                <div id="five_">
+                    <div> <h5>Or Checkout With:</h5> </div>
+                    <div>
+                        <img src="https://img.shop.com/Image/local/images/cc/paypal-logo.svg" alt="">
+                        <img src="https://img.shop.com/Image/local/images/cc/paypal-credit.svg" alt="">
+                        <img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936" alt="">
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
+<script>
+
+
+
+    window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+    function OpenSignin(){
+        window.location.href='SignIn.html'
+    }
+   
+    function goHome(){
+        window.location.href='index.html'
+    }
+    function OpenCartPage(){
+        window.location.href='cart.html'
+    }
+    function OpenShipping(){
+        var look_acc = localStorage.getItem('signInUser')
+        if(look_acc==1){
+            window.location.href='shipping.html'
+        }else{
+            window.location.href='SignIn.html'
+        }
+        
+    }
+    </script>
+    <script src="cart.js"></script>

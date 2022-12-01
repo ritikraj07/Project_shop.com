@@ -1,0 +1,232 @@
+#containerCarT{
+    /* border: 1px solid red; */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h6,p{
+    color: #202340;;
+}
+#detatil_part_cart h6{
+    font-size: 30px;
+    margin: 0;
+}
+#YourCart{
+    /* border: 2px solid black; */
+    font-size: 35px;
+    font-weight: 700;
+}
+#left_container_cart{
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+#pro_appender{
+    /* border: 1px solid black; */
+}
+#Product_{
+    /* border: 2px solid yellow; */
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+#Product_ div:nth-child(1){
+    /* border: 2px solid red; */
+    width: 18%;
+}
+#Product_ div:nth-child(1) img{
+    /* border: 1px solid black; */
+    width: 150px;
+    margin: auto;
+}
+
+#Product_ div:nth-child(2){
+    /* border: 2px solid rgb(255, 0, 225); */
+    width: 33%;
+    padding: 0 5px;
+}
+#Product_ div:nth-child(2) h1{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Product_ div:nth-child(3){
+    /* border: 2px solid rgb(129, 201, 6); */
+    width: 15%;
+    padding: 23px 2px;
+}
+#Product_ div:nth-child(3) button{
+    border: 1px solid #202340;
+    color:#202340;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+#Product_ div:nth-child(3) button:hover{
+    color:white;
+    background-color: #202340;
+    cursor: pointer;
+}
+#Product_ div:nth-child(4){
+    /* border: 2px solid rgb(11, 139, 213); */
+    width: 20%;
+    padding: 23px 0 0 0;
+}
+#Product_ div:nth-child(4) button{
+    border: 1px solid #202340;;
+    color:#202340;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+#Product_ div:nth-child(4) button:hover{
+    color:white;
+    background-color: #202340;
+    cursor: pointer;
+}
+
+#Product_ div:nth-child(5){
+    border: 2px solid rgb(8, 0, 255);
+    width: 10%;
+}
+
+
+
+#total_section{
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    width: 45%;
+    padding: 0 30px;
+    background-color: #f0f1f7 ;
+    height: 800px;
+ 
+}
+
+#total_section #first_ {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 16px;
+    
+}
+#price{
+    font-size: 20px;
+}
+#second_{
+    /* border: 1px solid gray; */
+    /* display: flex; */
+    /* float: right; */
+    text-align: right;
+    align-items: center;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+#second_ img{
+    width: 100px;
+    margin: auto;
+    padding:0 5px;
+}
+#third_{
+    display: flex;
+    justify-content: end;
+    background-color: white;
+    margin: 3px;
+    margin-left: 250px;
+    padding: 8px 0 ;
+    /* border: 1px solid saddlebrown; */
+    margin-bottom: 20px;
+}
+#third_ button{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 3px;
+    border-radius: 80px;
+    border: 1px solid #202340;
+    font-weight: bold;
+    background-color: white;
+}
+#third_ button:hover{
+    color: white;    
+    background-color: #202340;
+    cursor: pointer;
+}
+#third_ input{
+    width: 120px;
+    height: 38px;
+    padding: 5px;
+    font-size: 18px;
+    margin: 3px;
+    border: 1px solid #202340;
+    font-weight: bold;
+}
+#forth_{
+    display: flex;
+    justify-content: end;
+}
+#forth_ button{
+    width: 210px;
+    height: 50px;
+    padding: 5px;
+    font-size: 18px;
+    margin: 3px;
+    border-radius: 80px;
+    color: white;
+    font-weight: bold;
+    background-color: #363b67;
+}
+#forth_ button:hover{
+    background-color: #191c39;
+    cursor: pointer;
+}
+#five_ {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#five_ div:nth-child(1){
+    /* border: 1px solid red; */
+    
+    /* height: 15px; */
+    margin-right: 350px;
+    
+    /* position: relative; */
+}
+#five_ div:nth-child(1) h5{
+    /* padding-top: 10px; */
+    background-color: white;
+    /* border: 1px solid rgb(147, 203, 239); */
+    margin-bottom: -1px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 10px 10px 0 0;
+    
+}
+#five_ div:nth-child(2){
+    /* border: 1px solid red; */
+    background-color: white;
+    padding-left: 250px;
+    padding-right: 10px;
+}
+
+#five_ img{
+    width: 250px;
+    display: block;
+    margin: 20px 0;
+}
+
+.mid_p{
+    width: 15px;
+    top: 20px;
+}

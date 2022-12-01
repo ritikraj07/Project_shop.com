@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.com Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shipping.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+    <div id="snavbar">
+      <div>
+        <img
+          src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p><a href="index.html">Continue Shopping</a></p>
+      </div>
+    </div>
+    <div id="containerCarT">
+      <div id="shipping_yourcart">
+        <div><p id="YourCart">Checkout</p></div>
+        <div><p id="total_shipping">Order Total: $ <span id="total"></span></p></div>
+      </div>
+      <div id="shipping_loca">
+        <img src="shipping.png" alt="" />
+      </div>
+      <hr style="color: #dfe0ef; width: 10px" />
+      <div id="left_container_cart">
+        <div id="detatil_part_cart">
+          <h6>BHFO Shipment</h6>
+          <hr />
+          <div id="pro_appender">
+            <!-- product appending part -->
+          </div>
+        </div>
+        <div id="total_section">
+          <div>
+            <h2>Shipping</h2>
+          </div>
+          <div id="user_details_">
+            <p id="name">Ritik Raj</p>
+            <p id="city">Mumbai</p>
+            <p id="add">Mumbai Maha, Ind, 400004</p>
+            <div class="flex-do">
+              <div id="phone-no">Phone: 9693452199</div>
+              <div><a href="">Change Address </a></div>
+            </div>
+          </div>
+          <div>
+            <h1>Order Summary</h1>
+          </div>
+          <hr />
+          <div id="laksd">
+            <div class="flex-do">
+              <div>Items Subtotal:</div>
+              <div>$ <span id="total2">0</span></div>
+            </div>
+
+            <div class="flex-do">
+              <div>Tax total:</div>
+              <div>$1.00</div>
+            </div>
+
+            <div class="flex-do">
+              <div>Shipping:</div>
+              <div>$12.43</div>
+            </div>
+            <hr />
+            <div class="flex-do">
+              <div>Order Total</div>
+              <div>$ <span id="total1">0</span></div>
+            </div>
+
+            <div id="to_price" class="flex-do">
+              <div>
+                <img
+                  class="mid_p"
+                  src="https://img.shop.com/Image/resources/images/cashback-icon.svg"
+                  alt=""
+                />
+                Cashback earned on this order:
+              </div>
+              <div>$0.23</div>
+            </div>
+            <hr id="hr_wod" />
+          </div>
+          <div class="flex-do">
+            <div><a href="">Address</a></div>
+            <div>
+              <button onclick="OpenPamentPage()">Continue Checkout</button>
+            </div>
+          </div>
+          <div id="last_t">
+            <p>Let us know how we are doing <a href="">Send Feedback</a></p>
+            <h2>Thanks!</h2>
+            <p>Your feedback is appreciated and reviewed by our team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/257095c429.js"
+  crossorigin="anonymous"
+></script>
+<script>
+//   window.onscroll = function () {
+//     mynavFunction();
+//   };
+//   var nav = document.getElementById("nav");
+//   var stick = nav.offsetTop;
+//   function mynavFunction() {
+//     if (window.pageYOffset >= stick) {
+//       nav.classList.add("sticky");
+//     } else {
+//       nav.classList.remove("sticky");
+//     }
+//   }
+  function OpenSignin() {
+    window.location.href = "SignIn.html";
+  }
+
+  function goHome() {
+    window.location.href = "index.html";
+  }
+  function OpenCartPage() {
+    window.location.href = "cart.html";
+  }
+
+  function OpenPamentPage() {
+    window.location.href = "payment.html";
+  }
+</script>
+<script src="shipping.js"></script>

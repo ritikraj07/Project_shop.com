@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Details Page</title>
+    <link rel="stylesheet" href="Details.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="shoppie.css" />
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay_left">
+        <div onclick="offLeft()" id="btndiv_overlay"><Button><i class="fa-regular fa-circle-xmark"></i></Button></div>
+        <div id="div1overlay">
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+            <h2>SHOP.COM</h2>
+        </div>
+        <div id="div2overlay">
+            <h3>Categories</h3>
+            <p>Cyber week Specials</p>
+            <p>Gift Center</p>
+            <p>SHOP.COM Home Warranties</p>
+            <p>OneCart Exclusive Deals</p>
+            <p>Clothes</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Home</p>
+            <p>Electronics</p>
+            <p>Health & Nutrition</p>
+            <p>Jewelry</p>
+            <p>Kids</p>
+            <p>Pet Supplies</p>
+            <p>Food & Drink</p>
+            <p>Sports</p>
+            <P>Travel</P>
+            <P>SHOP Travel</P>
+            <P>All Stores</P>
+            <P>Exclusive Brands</P>
+        </div>
+    </div>
+    <div id="navbar">
+        <div id="navbar_static">
+            <p>Buy now, pay later! Use Sezzle this Holiday Season!   <a href="">Learn More</a> </p>
+        </div>
+        <div id="nav">
+            <div id="navMain" style="width: 100%;" >
+                <div>
+                    <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                    <div id="searching_box">
+                        <select class="f4cur" name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" class="f4cur" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div><img class="f4cur" id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
+                </div>
+                <div id="lastnav">
+                    <div><img onclick="menuLeft()" class="f4cur" src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                    <!-- <div><button><i class="fa-solid fa-bars"></i></button></div> -->
+                    <div id="navLink">
+                        <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
+                        <a href="ExclusiveBrands.html">Exclusive Brands</a>
+                        <a href="">Stores</a>
+                        <a href="">Deals</a>
+                        <a href="">Shop Travel</a>
+                        <a href="">Departments</a>
+                        <a href="">ShopBuddy</a>
+                        <a href="">SHOP Local</a>
+                    </div>
+                    <div>
+                        <img class="f4cur" onclick="OpenSignin()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                        <img class="f4cur" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                        <img class="f4cur" onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div id="navformid">
+                <div>
+                    <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+                </div>
+                <div>
+                    <button onclick="menuLeft()"><i class="fa-sharp fa-solid fa-bars"></i></button>
+                </div>
+                <!-- <div> -->
+                    <div id="searching_box">
+                        <select name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                <!-- </div> -->
+                <div><button><i class="fa-solid fa-user"></i></button></div>
+                <div>
+                    <button><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div>
+
+        <div >
+            <p>SHOP.COM / Beauty / Eye Makeup / Eyebrow Gels</p>
+        </div>
+
+        <div id="temp_work">
+            <div id="details-img"></div>
+            <div id="details-details">
+                <p id="product-type"></p>
+                <h2 id="product-name"></h2>
+                <p>Sold by Shop.com</p>
+
+
+                <div>
+                    <p>5.0</p>
+                    <img id="rating-img" src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt="">
+                    <p>(4)Write a Review</p>
+                </div>
+               
+                <div>
+                    <h1 id="product-price"></h1>
+                    <p> / $0.44 / 2% Cashback</p>
+                </div>
+                
+                <div>
+                    <p>or 4 interest-free payments of <strong> $5.50</strong> with </p>
+                     <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> 
+                     <p> for orders over <strong> $35</strong></p>
+                </div>
+                
+                
+                <hr align="left">
+                <div>
+                    <p>Free shipping on orders $99 and up from Market America</p>
+                    <p>see details</p>
+                </div>
+                <hr align="left">
+
+                <div>
+                    <img src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg" alt="">
+                    <p>Now accepting Crypto at Checkout!</p>
+                </div>
+                <hr align="left" size="0.2px" color="#f0f1f7">
+
+                <div>
+                    Take advantage of Black Friday week savings through Cyber Monday!
+                     Use your Mastercard® when checking out with Click to Pay Click 
+                     to Pay and get 20% off this product. <u>Terms & conditions apply</u> .
+                </div>
+
+                <div>
+                   Select an option 
+                </div>
+                <div>
+                    <div>
+                        <div id="product-qty">
+                            <label for="">Qty:</label>
+                            <select name="" id="selectqty" >
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button onclick="AddToCart(dummy)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="zip code" style="font-style:Italic ;">
+                </div>
+                <button>Calculate Shipping</button>
+
+                <div>
+                    <div id="product-6img">
+                        <img src="https://img.shop.com/Image/productbadges/glutenfree.svg" alt="">
+                        <img src="https://img.shop.com/Image/productbadges/vegan.svg" alt="">
+                        <img src="https://img.shop.com/Image/productbadges/sulfatefree.svg" alt="">
+                        <img src="https://img.shop.com/Image/productbadges/crueltyfree.svg" alt="">
+                        <img src="https://img.shop.com/Image/productbadges/parabenfree.svg" alt="">
+                        <img src="https://img.shop.com/Image/productbadges/fragrancefree.svg" alt="">
+                    </div>
+
+                    <p>Swipe on your power brows with Motives Gel-ous Brow Gel.
+                       Formulated to tame, fill and give life to the most
+                       barely-there brows, this creamy gel catches each hair,
+                       coating them in color and holding them in place.
+                       Transform brows from boring to powerful... &nbsp <u> See details</u></p>
+                </div> 
+
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREAioReT6FQqy3Xw1XzjpdlM-Z8-Tohnd-Q&usqp=CAU" alt="">
+                    <p>Sign up to see what your friends like.</p>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+        <h1>We thought you may like:</h1>
+
+        <div>
+            <div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/31iEsAXEKWL.jpg", alt="">
+                    <h3>Motives® Essential Brow Kit</h3>
+                    <h2>$34.95</h2>
+                    <p> + $0.70 / 2%  Cashback</p>
+                    <p>Free shipping with $99 orders</p>
+                    <div>
+                        <img src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt=""> (43)
+                    </div>
+                </div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/4142IQRIrNL.jpg" alt="">
+                    <h3>Motives® Fiber Lush Mascara</h3>
+                    <h2>$29.95</h2>
+                    <p> + $0.70 / 2%  Cashback</p>
+                    <p>Free shipping with $99 orders</p>
+                    <div>
+                        <img src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt=""> (43)
+                    </div>
+                </div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/41KimHj7CRS.jpg" alt="">
+                    <h3>Motives® Super Power Mattes Eye Shadow Palette</h3>
+                    <h2>$45.00</h2>
+                    <p> + $0.70 / 2%  Cashback</p>
+                    <p>Free shipping with $99 orders</p>
+                    <div>
+                        <img src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt=""> (43)
+                    </div>
+                </div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/41+wLQIk9uL.jpg" alt="">
+                    <h3>Motives® Arch Definer Ultra-Fine Brow Pencil</h3>
+                    <h2>$20.00</h2>
+                    <p> + $0.70 / 2%  Cashback</p>
+                    <p>Free shipping with $99 orders</p>
+                    <div>
+                        <img src="https://www.pngplay.com/wp-content/uploads/6/5-Star-Rating-Vector-Transparent-PNG.png" alt=""> (43)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-section">
+            <h1>Details</h1>
+            <hr>
+            <p>Swipe on your power brows with Motives Gel-ous Brow Gel. Formulated to tame, 
+             fill and give life to the most barely-there brows, this creamy gel catches each hair,
+              coating them in color and holding them in place. Transform brows from boring to powerful
+             and never be gel-ous of any other brows again!</p>
+
+
+             <h1>Benefits</h1>
+             <hr>
+             <ul>
+                <li>Creamy gel formula available in five shades to match every brow</li>
+                <li>Helps fluff and tame brows with just one coat</li>
+                <li>Adds volume and color to sparse brows</li>
+                <li>Small spoolie applicator allows for a precise application</li>
+                <li>Vegan, paraben-free, gluten-free and sulfate-free</li>
+             </ul>
+              
+              
+              <h1>Ingredients</h1>
+              <hr>
+              <p>Aqua/Water/Eau, Synthetic Beeswax, Silica, Stearic Acid, Cetearyl Alcohol, 
+                Pentylene Glycol, Cera Carnauba/Copernicia Cerifera (Carnauba) Wax/Cire de 
+                Carnauba, Glyceryl Stearate, Polybutene, Cellulose Gum, Aminomethyl Propanol,
+                 Phenoxyethanol, Ceteth-10 Phosphate, Dicetyl Phosphate, Hectorite, PVP, 
+                 Cocos Nucifera (Coconut) Fruit Extract, Hydrolyzed Quinoa, Ethylhexylglycerin,
+                  Leuconostoc/Radish Root Ferment, Tocopherol. May Contain: Titanium Dioxide 
+                  (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499).</p>
+
+               <h1>FAQ</h1>
+              <hr>
+              <h3>How do I use the Motives Gel-ous Brow Gel?</h3>
+              <p>Using the provided applicator, apply directly onto brows in short, upward strokes to shape, fill and style the brows. </p>
+              <h3>Pro Tips:</h3>
+              <ul>
+                <li> Create volume with a few coats of short, upward strokes.</li>
+                <li>For a more natural-looking brow, start your strokes at the inner brow and move outward.</li>
+                <li>For full-on power brows, use short strokes starting against the hair growth direction and start at the tail of the brow. Allow time for the gel to dry, and then brush hairs back in place.</li>
+                <li>Use the tip of the applicator for the arch and tail of the brow to define and shape.</li>
+                <li>Use the Motives Arch Definer Ultra-Fine Brow Pencil to add hair-like strokes to fill empty spots and areas</li>
+              </ul>
+              <br><br>
+              <h3>What if I just want to tame and shape the brows I have and not add color?</h3>
+              <p>We offer a "clear" version of the Motive Gel-ous Brow Gel that will help tame, shape and fluff brows without adding additional color. </p><br>
+              <h3>Are there any other products I could use in addition to the Motives Gel-ous Brow Gel?</h3>
+              <p>We recommend pairing the brow gel with our Motives Arch Definer Ultra Fine Brow Pencil and/or our Motives Essential Brow Kit. Use whatever combination of products you would like to help you feel confident in your brows.</p><br>
+              <h3>Is the Motives Gel-ous Brow Gel waterproof?</h3>
+              <p>While our Motives Gel-ous Brow Gel is not waterproof, it is formulated to stick with you all day!</p><br>
+              <h3>Is Motives Gel-ous Brow Gel tested on animals?</h3>
+              <p>Motives does not conduct or commission animal testing of any finished product.</p><br>
+
+        </div>
+       
+    </div>
+    <div id="footer">
+        <div style="background-color: rgb(84,88,113);">
+            <div id="footer-para">
+               <div> <p>Link To This Page & Tell All Your Friends</p></div>
+                <div><button>copy Link</button></div>
+            </div>
+            <div id="footer_2nd">
+                <div> 
+                    <p>About Us | Help | Accessibility Statement | Contact Us | Partner With Us | Services | Country/Region | Connect | Own Your Own SHOP Site</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(240,241,247);display: block;">
+            <div id="fooder_details">
+                <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+                <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+                <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+            </div>
+            <div id="footer_last">
+                <div>
+                    <div><img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/0/q/U9W4qM8Kw.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/5/F/ZEg9H4vt0.png" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
+                </div>
+                <div>
+                    <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer2">
+        <div id="fot_1">Link To This Page & Tell All Your Friends!<button>copy Link</button> </div>
+        <div id="fot_2">
+            <div> 
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+            <div>
+                <p>About Us | Help | Accessibility Statement | Contact Us | Partner With Us | Services | Country/Region | Connect | Own Your Own SHOP Site</p>
+            </div>
+        </div>
+        
+        <div id="fooder_details2">
+            <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+            <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+            <div id="footer_last">
+                <div>
+                    <div><img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/0/q/U9W4qM8Kw.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/5/F/ZEg9H4vt0.png" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
+                </div>
+                <div>
+                    <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+
+<script>
+     var dummy=JSON.parse(localStorage.getItem("productInDetail")) ||{}
+    display();
+
+    function display (){
+
+    var image = document.createElement("img");
+    image.setAttribute("src",dummy.image);
+    image.setAttribute("alt", "productimage");
+    document.getElementById("details-img").append(image);
+    
+    var type= document.createElement("p");
+    type.textContent=dummy.type;
+    document.getElementById("product-type").append(type);
+
+    var name=document.createElement("h3");
+    name.textContent=dummy.name;
+    document.getElementById("product-name").append(name);
+
+    var price = document.createElement("h2");
+    price.textContent=dummy.price;
+    document.getElementById("product-price").append(price);
+    }
+
+    var ProductInCart = JSON.parse(localStorage.getItem('cart'))||[]
+    function AddToCart(list){
+    var check = false;
+    var find_product_in_cart = ProductInCart.filter(function(element){
+      if(element.image==list.image){
+        check = true;
+      }
+    })
+    if(check==true){
+      alert("Product already exist in Cart!")
+    }else{
+      ProductInCart.push(list)
+      localStorage.setItem('cart', JSON.stringify(ProductInCart))
+    }    
+}
+
+
+</script>
+<script>
+    
+    window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+        // alert('hello')
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+function OpenSignin(){
+    window.location.href='SignIn.html'
+}
+
+function goHome(){
+    window.location.href='index.html'
+}
+function OpenCartPage(){
+    window.location.href='cart.html'
+}
+function menuLeft(){
+    document.getElementById("overlay_left").style.display = "block";
+    document.getElementById('navbar').setAttribute('class', 'backup')
+    document.getElementById('container_index').setAttribute('class', 'backup')
+
+}
+function offLeft() {
+    document.getElementById("overlay_left").style.display = "none";
+    document.getElementById('navbar').classList.remove('backup')
+    document.getElementById('container_index').classList.remove('backup')
+}
+</script>
+<script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products Page</title>
+    <link rel="stylesheet" href="MainProduct.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div id="overlay_left">
+        <div onclick="offLeft()" id="btndiv_overlay"><Button><i class="fa-regular fa-circle-xmark"></i></Button></div>
+        <div id="div1overlay">
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+            <h2>SHOP.COM</h2>
+        </div>
+        <div id="div2overlay">
+            <h3>Categories</h3>
+            <p>Cyber week Specials</p>
+            <p>Gift Center</p>
+            <p>SHOP.COM Home Warranties</p>
+            <p>OneCart Exclusive Deals</p>
+            <p>Clothes</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Home</p>
+            <p>Electronics</p>
+            <p>Health & Nutrition</p>
+            <p>Jewelry</p>
+            <p>Kids</p>
+            <p>Pet Supplies</p>
+            <p>Food & Drink</p>
+            <p>Sports</p>
+            <P>Travel</P>
+            <P>SHOP Travel</P>
+            <P>All Stores</P>
+            <P>Exclusive Brands</P>
+        </div>
+    </div>
+    <div id="navbar">
+        <div id="navbar_static">
+            <p>Buy now, pay later! Use Sezzle this Holiday Season!   <a href="">Learn More</a> </p>
+        </div>
+        <div id="nav">
+            <div id="navMain" >
+                <div>
+                    <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                    <div id="searching_box">
+                        <select class="f4cur" name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" style=" margin-right: -1%;" class="f4cur" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div><img class="f4cur" id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
+                </div>
+                <div id="lastnav">
+                    <div><img onclick="menuLeft()" class="f4cur" src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                    <!-- <div><button><i class="fa-solid fa-bars"></i></button></div> -->
+                    <div id="navLink">
+                        <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
+                        <a href="ExclusiveBrands.html">Exclusive Brands</a>
+                        <a href="MainProduct.html">Stores</a>
+                        <a href="">Deals</a>
+                        <a href="">Shop Travel</a>
+                        <a href="">Departments</a>
+                        <a href="">ShopBuddy</a>
+                        <a href="">SHOP Local</a>
+                    </div>
+                    <div>
+                        <img class="f4cur" onclick="OpenSignin()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                        <img class="f4cur" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                        <img class="f4cur" onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div id="navformid">
+                <div>
+                    <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+                </div>
+                <div>
+                    <button onclick="menuLeft()"><i class="fa-sharp fa-solid fa-bars"></i></button>
+                </div>
+                <!-- <div> -->
+                    <div id="searching_box">
+                        <select name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" type="submit"><i class="fa fa-search"></i></button >
+                    </div>
+                <!-- </div> -->
+                <div><button><i class="fa-solid fa-user"></i></button></div>
+                <div>
+                    <button><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div id="productPage-body">
+        <p>SHOP.COM / Shoes / Men / Oxfords / 10</p>
+        <hr>
+        <div>
+            <div id="sortBestMatch">
+                 <div>Sort:</div>
+                <select name="" id="SortBy">
+                    <option value="best">Best Match</option>
+                    <option value="htl">Price High-Low</option>
+                    <option value="lth">Price Low-High</option>
+                </select>
+            </div>
+            
+
+            <div id="filterbtn">
+                <button>Filter</button>
+            </div>
+        </div>
+
+        
+        <hr>
+
+        <div id="main">
+
+
+            <div id="leftPortion">
+                <div>
+                    <input id="checkbox1" class="checkboxs" type="checkbox"> 
+                    <label for=""><span id="oneCart-img"><img src="https://img.shop.com/Image/resources/images/onecart-icon.svg" alt=""></span> <b>OneCart®</b>  (94)</label>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <input id="checkbox1" class="checkboxs" type="checkbox"> 
+                        <label for="">Sale items  (24,885)</label>
+                    </div>
+                    <div>
+                        <input  id="checkbox1" class="checkboxs" type="checkbox"> 
+                        <p>Shipping Offers  (8,189)</p> 
+                    </div>
+                   
+                </div>
+                <hr size="0" width="90%">
+
+                <div>
+                    <button class="MaterialType" id="mensShoes" onclick="hideMensShoeType()">Men's Shoe Type   <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="closeMensShoesType" class="mensShoesType">
+                   <p>Boots  (10,817)</p> 
+                   <p>Athletic  (9,706)</p>
+                   <p>Slip-Ons  (6,067)</p>
+                   <p>Oxfords  (4,994)</p>
+                   <p>Slippers  (3,447)</p>
+                   <p>Sandals  (3,221)</p>
+                   <p>Mules  (195)</p>
+                </div>
+
+                <div>
+                    <button  id="material" class="MaterialType" onclick="hideMaterialType()">Material  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductMaterialType" class="mensShoesType">
+                   <p>Boots  (10,817)</p>
+                    <p>Rubber  (23,264)</p>
+                   <p>Textiles  (22,510)</p>
+                   <p>Leather  (21,999)</p>
+                   <p>Plastic  (785)</p>
+                   <p>Wood  (555)</p>
+                </div> 
+
+
+                <div>
+                    <button id="ShoeSize" class="MaterialType" onclick="hideShoeSize()">Size  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductSize" class="mensShoesType">
+                   <p onclick="getShoeSize('5')" value="5">5  (6,003)</p>
+                   <p onclick="getShoeSize('6')">6  (5,568)</p>
+                   <p onclick="getShoeSize('7')">7  (6,473)</p>
+                   <p onclick="getShoeSize('8')">8 (5,802)</p>
+                   <p onclick="getShoeSize('9')">9 (4,727)</p>
+                   <p>10 (5,598)</p>
+                   <p>11  (6,407)</p>
+                   <p>11½  (4,367)</p>
+                   <p>12  (5,706)</p>
+                   <p>13  (5,135)</p>
+                   <p>+ See MoreSize</p>
+                </div> 
+
+                <div>
+                    <button id="shoeColor" class="MaterialType" onclick="hidecolor()">Color  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductColor" class="mensShoesType">
+                   <p> Beige  (2,246)</p>   
+                   <p>Black  (15,348)</p>
+                   <p>Blue  (4,379)</p>
+                   <p>Brown  (8,901)</p>
+                   <p>Gold  (597)</p>
+                   <p>Gray  (6,261)</p>
+                   <p>Green  (1,728)</p>
+                   <p>Red  (2,196)</p>
+                   <p>Silver  (963)</p>
+                   <p>White  (4,587)</p>
+                   <p>+ See MoreSize</p>
+                </div> 
+
+
+                <div>
+                    <button class="MaterialType">Men's Shoe Width  <i class="fa-solid fa-chevron-up"></i></button>
+                </div>
+                <div id="ProductWidth" class="mensShoesType">
+                   <p> Any Width  (46,345)</p>
+                   <p>Wide  (5,321)</p>
+                   <p>Extra Wide  (457)</p>
+                   <p>Narrow  (211)</p>
+                </div> 
+            
+
+
+            <div>
+                <button class="MaterialType" >Men's Athletic Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductAthleticStyle" class="mensShoesType">
+               <p> Work & Safety  (1,376)</p>
+               <p>Chukkas  (1,163)</p>
+               <p>Western  (983)</p>
+               <p>Ankle  (867)</p>
+               <p>Rain & Snow  (504)</p>
+               <p>Hiking  (497)</p>
+               <p>Motorcycle  (89)</p>
+               <p>Mid-Calf  (6)</p>
+            </div> 
+
+            <div>
+                <button class="MaterialType" >Occasion  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductOccasion" class="mensShoesType">
+               <p> Casual  (1,772)</p>
+               <p>Dress  (1,873)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType">Men's Slip-On Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSlipOnStyle" class="mensShoesType">
+               <p> Loafers  (4,426)</p>
+               <p>Boat Shoes  (426)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType">Men's Sandal Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSandalStyle" class="mensShoesType">
+               <p> Slides  (1,767)</p>
+               <p>Flip Flops  (522)</p>
+               <p>Fisherman  (134)</p>
+               <p>Sport  (74)</p>
+               <p>Water Shoes  (12)</p>
+               <p>Thongs  (18)</p>
+               <p>Slingback  (8)</p>
+            </div> 
+
+
+
+            <div>
+                <button class="MaterialType">Men's Slipper Style  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductSlipperStyle" class="mensShoesType">
+               <p>  Moccasins  (943)</p>
+               <p>Slip-On  (265)</p>
+               <p>Booties  (79)</p>
+               <p>Flip Flops  (16)</p>
+            </div> 
+
+
+            <div>
+                <button class="MaterialType" >Brand  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductBrand" class="mensShoesType">
+               <p> Nunn Bush  (3,395)</p>
+               <p>Deer Stags  (2,566)</p>
+               <p>Nike  (1,696)</p>
+               <p>adidas  (1,937)</p>
+               <p>Thomas  (1,512)</p>
+               <p>Skechers  (1,294)</p>
+               <p>Puma  (1,016)</p>
+               <p>Lugz  (1,161)</p>
+               <p>Clarks  (997)</p>
+               <p>Dockers  (998)</p>
+               <p> + See MoreBrand</p>
+            </div>
+
+            <div>
+                <button class="MaterialType">Stores  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductStores" class="mensShoesType">
+               <p>  Kohl's  (16,538)</p>
+               <p>JCPenney  (10,814)</p>
+               <p>Macy's  (3,321)</p>
+               <p>UnbeatableSale  (2,785)</p>
+               <p>KixRx  (2,161)</p>
+               <p>RuzeShoes  (1,955)</p>
+               <p>BHFO  (1,535)</p>
+               <p>Azura Runway  (1,231))</p>
+               <p>Rue La La  (1,202)</p>
+               <p>Ranch & Home  (1,161)</p>
+               <p> + See MoreBrand</p>
+            </div>
+
+
+            <div>
+                <button class="MaterialType">Price Range  <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div id="ProductPriceRange" class="mensShoesType">
+               <p> $95.00 and Below  (264)</p>
+               <p>$95.01 - $130.00  (255)</p>
+               <p>$130.01 - $195.00  (243)</p>
+               <p>$195.01 - $300.00  (243)</p>
+               <p>$300.01 and Above  (232)</p>
+            </div>
+
+
+            <div id="minmax">
+                <input type="text" placeholder="Min" style="font-style: italic;">
+                <input type="text" placeholder="Max" style="font-style: italic;">
+                <button>></button>
+            </div>
+
+            <div id="feedback">
+                <p>Tell us how we are doing</p>
+                <p>We constantly strive to improve 
+                    the customer experience
+                     and we value your feedback.</p>
+                <textarea name="" id="" cols="30" placeholder="Enter feedback here. Include your email address if you would like to be contacted." style="font-style:Italic ;" rows="7"></textarea>
+                <button>Submit feedback</button>
+
+                <h2>Thanks!</h2>
+                <p>Your feedback is appreciated and reviewed by our team.</p>
+
+            </div>
+
+
+
+            
+        </div>
+
+            <div id="rightPortion">
+                <div id="container">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="background-color: rgb(84,88,113);">
+            <div id="footer-para">
+               <div> <p>Link To This Page & Tell All Your Friends</p></div>
+                <div><button>copy Link</button></div>
+            </div>
+            <div id="footer_2nd">
+                <div> 
+                    <p>About Us | Help | Accessibility Statement | Contact Us | Partner With Us | Services | Country/Region | Connect | Own Your Own SHOP Site</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(240,241,247);">
+            <div id="fooder_details">
+                <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+                <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+                <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+            </div>
+            <div id="footer_last">
+                <div>
+                    <div><img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/0/q/U9W4qM8Kw.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/5/F/ZEg9H4vt0.png" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
+                </div>
+                <div>
+                    <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer2">
+        <div id="fot_1">Link To This Page & Tell All Your Friends!<button>copy Link</button> </div>
+        <div id="fot_2">
+            <div> 
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+            <div>
+                <p>About Us | Help | Accessibility Statement | Contact Us | Partner With Us | Services | Country/Region | Connect | Own Your Own SHOP Site</p>
+            </div>
+        </div>
+        
+        <div id="fooder_details2">
+            <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+            <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+            <div id="footer_last">
+                <div>
+                    <div><img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/B/L/K5pf_0c94.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/m/S/eK8gl_JjY.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/0/q/U9W4qM8Kw.webp" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/5/F/ZEg9H4vt0.png" alt=""></div>
+                    <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
+                    <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
+                </div>
+                <div>
+                    <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
+                </div>
+            </div>
+    </div>
+    
+
+</body>
+
+</html>
+<script src="MainProduct.js"></script>
+<script src="https://kit.fontawesome.com/33afe5378a.js" crossorigin="anonymous"></script>
+<script>
+    
+    window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+        // alert('hello')
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+function OpenSignin(){
+    window.location.href='SignIn.html'
+}
+
+function goHome(){
+    window.location.href='index.html'
+}
+function OpenCartPage(){
+    window.location.href='cart.html'
+}
+function menuLeft(){
+    document.getElementById("overlay_left").style.display = "block";
+    document.getElementById('navbar').setAttribute('class', 'backup')
+    document.getElementById('container_index').setAttribute('class', 'backup')
+
+}
+function offLeft() {
+    document.getElementById("overlay_left").style.display = "none";
+    document.getElementById('navbar').classList.remove('backup')
+    document.getElementById('container_index').classList.remove('backup')
+}
+</script>
+<script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>

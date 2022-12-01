@@ -17,7 +17,7 @@
         </div>
         <div id="navMain">
             <div>
-                <div><img id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
                 <div id="searching_box">
                     <select name="navFilter" id="navFilter">
                         <option value="All-Departments">All Departments</option>
@@ -61,45 +61,79 @@
     </div>
 
     <div id="Exclu_container">
-        <div>
-            <h2>About</h2>
-            <h2>Help</h2>
-            <h2>Partner With Us</h2>
-            <h2>Services</h2>
-            <h2>Terms & Policy</h2>
-            <h2>Shipping Info</h2>
-            <h2>Return Policy</h2>
-            <h2>Contact Us</h2>
-            <h2>Own Your Own SHOP Site</h2>
+        <div id="EXu_link">
+            <div>
+               <div  class="EXshow_div" > <h3 onclick="show_aboutus()">About US</h3> 
+                <button  onclick="show_aboutus()" id="AboutBTN"><i class="fa-solid fa-plus"></i></button></div>
+                <div id="Aboutusho">
+                    <p>About Us</p>
+                    <p>Corporate History</p>
+                    <p>Exclusive Brands</p>
+                    <p>Executive Team</p>
+                    <p>Careers</p>
+                    <p>In the News</p>
+                </div>
+            </div>
+            <div class="EXshow_div"><h3>Help</h3><button><i class="fa-solid fa-plus"></i></button></div>
+            <div class="EXshow_div"><h3>Partner Wtih Us</h3><button><i class="fa-solid fa-plus"></i></button></div>
+            <div class="EXshow_div"><h3>Services</h3><button><i class="fa-solid fa-plus"></i></button></div>
+            <div><h3>Terms & Privacy</h3></div>
+            <div><h3>Shipping Info</h3></div>
+            <div><h3>Return Policy</h3></div>
+            <div><h3>Contact Us</h3></div>
+            <div><h3>Own Your Own SHOP Site</h3></div>
         </div>
-        <div id="Ex_product">
+        <div id="e2nd_con_ex">
             <h1>Ours Brands</h1>
             <h2>Health & Nutrition</h2>
-            <div>
-                <div><img src="https://www.shop.com/info/isotonix" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/prime-usca-hk-logo.svg" alt=""></div>
-                <div><img src="https://www.shop.com/info/ultimate-aloe" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/advanced-level-90-us-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/bliss-new-us-logo.svg" alt=""></div>
-                <div><img src="https://www.shop.com/Glucosatrin+reg+Bone+Joint+Health-1730212095-p+.xhtml" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/heart-health-logo-trademark-cross.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/mochatonix-us-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/awake-us-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/cannabiquin-logo-tm.svg" alt=""></div>
+            <div id="Ex_product">
+                <div>
+                    <div class="nborderImg" ><img  src="https://img.shop.com/Image/Images/11module/MABrands/isotonix-us-au-gb-hk-sg-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img  src="https://img.shop.com/Image/Images/11module/MABrands/prime-usca-hk-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/ultimate-aloe-usca-hk-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/advanced-level-90-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/bliss-new-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/glucosatrin-usca-au-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/vitamind-us-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/mochatonix-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/awake-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/cannabiquin-logo-tm.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/ultimate-aloe-usca-hk-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/bymygra-logo-trademark.svg" alt=""></div>
+                    
+                </div>
+                <h2>Beauty</h2>
+                <div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/clearshield-usca-logo.svg" alt=""></div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/pentaxyl-usca-au-hk-tw-sg-logo.svg" alt=""></div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/clearshield-usca-logo.svg" alt=""></div>
+                </div>
+                <h2>Jewelry</h2>
+                <div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/global-care-us-logo.svg" alt=""></div>
+                    <div class="nborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/pure-H2O-usca-hk-tw-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/shopdotcom-us-digital-gift-card.svg" alt=""></div>
+                </div>
+                <h2>Home</h2>
+                <div>
+                    <div class="nborderImg" ><img  src="https://img.shop.com/Image/Images/11module/MABrands/isotonix-us-au-gb-hk-sg-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img  src="https://img.shop.com/Image/Images/11module/MABrands/prime-usca-hk-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/ultimate-aloe-usca-hk-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/advanced-level-90-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/bliss-new-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/glucosatrin-usca-au-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/vitamind-us-logo.svg" alt=""></div>
+                    <div class="nborderImg" ><img src="https://img.shop.com/Image/Images/11module/MABrands/mochatonix-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/awake-us-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/cannabiquin-logo-tm.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/ultimate-aloe-usca-hk-logo.svg" alt=""></div>
+                    <div class="yborderImg"><img src="https://img.shop.com/Image/Images/11module/MABrands/bymygra-logo-trademark.svg" alt=""></div>
+                    
+                </div>
             </div>
-            <h2>Beauty</h2>
-            <div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/clearshield-usca-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/pentaxyl-usca-au-hk-tw-sg-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/fixx-au-tw-logo.svg" alt=""></div>
-                <div><img src="https://img.shop.com/Image/Images/11module/MABrands/clearshield-usca-logo.svg" alt=""></div>
-            </div>
-            <h2>Jewelry</h2>
-            <div><img src="https://img.shop.com/Image/Images/11module/MABrands/global-care-us-logo.svg" alt=""></div>
-            <div><img src="https://img.shop.com/Image/Images/11module/MABrands/pure-H2O-usca-hk-tw-logo.svg" alt=""></div>
-            <div><img src="https://img.shop.com/Image/Images/11module/MABrands/shopdotcom-us-digital-gift-card.svg" alt=""></div>
         </div>
     </div>
 
@@ -137,14 +171,7 @@
                     <div><img src="https://www.shop.com/feo-cdn/N/z/XfD9Uvd_o.webp" alt=""></div>
                     <div> <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt=""></div>
                     <div> <img src="https://www.shop.com/feo-cdn/X/h/rM107miWU.webp" alt=""></div>
-                    
-                    
-                    
-                    
-                    
-                    
-                   
-                   
+
                 </div>
                 <div>
                     <img src="https://www.digicert.com/content/dam/digicert/images/navigation/header/DigiCertLogo_MainNavigation.svg" alt="">
@@ -171,8 +198,27 @@
         navbar.classList.remove("sticky");
       }
     }
-
+   
+    function goHome(){
+        window.location.href='index.html'
+    }
+    let sho = document.getElementById('Aboutusho');
+    let sho_con = 0;
+    function show_aboutus(){
+        if(sho_con==0){
+            sho.style.display='block'
+            sho_con++;
+            document.getElementById('AboutBTN').innerHTML='<i class="fa-solid fa-minus"></i>';
+            
+        }else{
+            sho.style.display='none'
+            sho_con=0;
+            document.getElementById('AboutBTN').innerHTML='<i class="fa-solid fa-plus"></i>';
+        }
+        
+        
+    }
     
 
     </script>
-
+<script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
