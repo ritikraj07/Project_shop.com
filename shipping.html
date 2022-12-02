@@ -52,8 +52,8 @@
             <p id="city">Mumbai</p>
             <p id="add">Mumbai Maha, Ind, 400004</p>
             <div class="flex-do">
-              <div id="phone-no">Phone: 9693452199</div>
-              <div><a href="">Change Address </a></div>
+              <div >Phone: <span id="phone-no">9693452199</span> </div>
+              <div><a href="addressPage.html">Change Address </a></div>
             </div>
           </div>
           <div>
@@ -115,18 +115,29 @@
   crossorigin="anonymous"
 ></script>
 <script>
-//   window.onscroll = function () {
-//     mynavFunction();
-//   };
-//   var nav = document.getElementById("nav");
-//   var stick = nav.offsetTop;
-//   function mynavFunction() {
-//     if (window.pageYOffset >= stick) {
-//       nav.classList.add("sticky");
-//     } else {
-//       nav.classList.remove("sticky");
-//     }
-//   }
+  // window.onscroll = function () {
+  //   mynavFunction();
+  // };
+  // var nav = document.getElementById("nav");
+  // var stick = nav.offsetTop;
+  // function mynavFunction() {
+  //   if (window.pageYOffset >= stick) {
+  //     nav.classList.add("sticky");
+  //   } else {
+  //     nav.classList.remove("sticky");
+  //   }
+  // }
+    var address_data = JSON.parse(localStorage.getItem('Address'))
+    display_user_data(address_data)
+    function display_user_data(data){
+      document.getElementById('name').innerText= data.firstName + " "+ data.lastname
+      document.getElementById('city').innerText = data.city
+      document.getElementById('add').innerText = data.address + " " + data.address2 + " "+ data.state
+      document.getElementById('phone-no').innerText = data.phoneNumber
+    }
+
+
+
   function OpenSignin() {
     window.location.href = "SignIn.html";
   }

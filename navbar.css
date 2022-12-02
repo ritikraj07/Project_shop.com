@@ -17,18 +17,43 @@
   color: #202340 ;
   padding: 20px 5px 10px 30px;
   overflow-y: scroll;
-
+  animation: fade-in 1s forwards;
+  transform: translateX(-100%);
+}
+@keyframes fade-in {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+  100%{left: 0;}
+  100%{transform: translateX(0%);}
 }
 
-/* #overlay_left {
-  margin: auto;
-  position: absolute;
-  top: 50px; left: 50px;
-  bottom: 50px; right: 50px;
-  background-color: #000;
-  color: #FFF;
-  z-index:5;
-  } */
+#overlay_right{
+  position: fixed;
+  display: none;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #202340 ;
+  padding: 20px 5px 10px 30px;
+  overflow-y: scroll;
+  animation: fade-out 1s forwards;
+  transform: translateX(-100%);
+  
+}
+@keyframes fade-out {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+  100%{right: 0;}
+  100%{transform: translateX(0%);}
+}
+
 
 
 .backup{
@@ -36,9 +61,7 @@
   background:rgba(0,0,0,.3);
   
 }
-#overlay_left{
-  /* border: 1px solid gray; */
-}
+
 #btndiv_overlay{
   display: flex;
   justify-content: end;

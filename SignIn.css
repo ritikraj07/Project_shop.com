@@ -1,6 +1,6 @@
 #formMainPage{
     /* border: 2px solid red; */
-    margin: 19% 0  0 0;
+    margin: 19% 0  10% 0;
     color: #202340 ;
 }
 
@@ -46,6 +46,11 @@ form + p{
     background-color: #414467;
     border: none;
 }
+#signInform>div:nth-child(1) button:hover{
+    color: #202340;
+    background-color:white;
+    border: 1px solid #202340;
+}
 
 
 #signInform>div:nth-child(2){
@@ -56,16 +61,27 @@ form + p{
 }
 
 #signInform>div:nth-child(2) p{
+    
     margin: -5% 0 0 0;
 }
 
 #signInform>div:nth-child(2) button{
-    margin: 1% 0 0 0;
-    width: 62%;
-    border: 2px solid  #202340;
+    
+    margin: 4% 0 0 0;
+    width: 90%;
+    border: 1px solid  #202340;
     border-radius: 30px;
     padding: 4% 1.5%; 
     font-size: 100%;
     font-weight: 600;
-    color:  #202340;
+    
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+#goToCreateAcc:hover{
+    color: white;
+    background-color:#202340;
 }

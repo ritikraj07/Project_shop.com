@@ -10,11 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="payment.css">
     <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="payment_form.css" />
+    
+    <script src="https://kit.fontawesome.com/0575e5d5eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="snavbar" >
         <div>
-            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg" alt="">    
+            <img onclick=" goHome()" src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg" alt="">    
         </div>
         <div>
             <p><a href="index.html">Continue Shopping</a></p>
@@ -148,7 +151,7 @@
                         </div>
                         <p style="margin-top: 30px;">Mobile Number</p>
                         <hr>
-                        <h4 id="mobil">989394923</h4>
+                        <h4 id="mobil">9693452199</h4>
                         <p>Message and data rates may apply.</p>
                         <p>Mobile number can be changed in your <a href="">Profile</a> .</p>
         
@@ -157,7 +160,7 @@
                </div>
                <div class="flex-do">
                     <div> <a href="">Shipping</a> </div>
-                    <div><button>Place Order</button></div>
+                    <div><button onclick="pay_pop_oon()">Place Order</button></div>
                </div>
                <div id="last_t">
                     <p>Let us know how we are doing <a href="">Send Feedback</a></p>
@@ -168,6 +171,135 @@
         </div>
     </div>
 
+
+    <div id="pay_ment_for_m">
+
+         <div id="pay_fit"> 
+
+            <div id="boss">
+            <div id="icon">
+            <button onclick="pay_pop_off()" id="cross"><i class="fa-solid fa-circle-xmark fa-2x"></i></button>
+            </div>
+            <form >
+              
+                <h3>Card Information</h2>
+                    
+                <div id="visa">
+            
+                 <div id="visaa">
+                <label for="">Credit card type</label><br />
+                <div id="innput">
+                   
+                <select id="card" >
+                  <option value="">American Express</option>
+                  <option value="Rupay">Rupay</option>
+                  <option value="VISA">VISA</option>
+                  <option value="UPI">UPI</option>
+                  <option value="InternetBanking">Internet Banking</option>
+                </select>
+                  </div>
+                 </div>
+                
+               <div id="visab">
+                <label for="">Name on Card</label><br>
+                <input id="name_on_card" type="text" placeholder="Name on card" />
+               </div>
+        </div>
+        
+           <div id="carda">
+                <div id="cardaa">
+                <label for="">Card number</label><br />
+                <input id="card_number" type="text" placeholder="Card number here (digit only)" />
+                </div>
+          
+                
+                <div id="cardab">
+                    
+                  <label id="m">Exp Month</label><br />
+                  
+                  <select placeholder="">
+                    
+                    <option  name="January" value="Jan">January</option>
+                    <option name="February" value="Feb">February</option>
+                    <option name="March" value="Mar">March</option>
+                    <option name="April" value="Apr">April</option>
+                      <option name="May" value="May">May</option>
+                    <option name="June" value="Jun">June</option>
+                    <option name="July" value="Jul">July</option>
+                    <option name="August" value="Aug">August</option>
+                      <option name="September" value="Sep">September</option>
+                    <option name="October" value="Oct">October</option>
+                    <option name="November" value="Nov">November</option>
+                    <option name="December" value="Dec">December</option>
+                  </select>
+                </div>
+        
+                <div id="cardac">
+                  <label for="">Exp Year</label><br />
+                  <select placeholder="year">
+                    
+                        <option value="2022"> 2022 </option>
+                        <option value="2023"> 2023</option>
+                        <option value="2024"> 2024 </option>
+                        <option value="2025"> 2025</option>
+                        <option value="2026"> 2026</option>
+                        <option value="2027"> 2027</option>
+                        <option value="2028"> 2028</option>
+                        <option value="2029"> 2029</option>
+                        <option value="2030"> 2030</option>
+                        <option value="2031"> 2031</option>
+                        <option value="2032"> 2032</option>
+                      </select>
+                    </div>
+                
+                </div>
+                      <div id="checkboxa">
+                      <input type="checkbox" id="checka" name="dsd" value="save this card">
+                      <label for="next">Save this card for next time</label><br>
+                    </div>
+        
+                    <div id="checkboxb">
+                      
+                      <input type="checkbox" id="checkb" name="" value="">
+                      <label for="defaultie">Set  as Default</label><br>
+                    </div>
+                    </form>
+                    <div id="express">
+                       <p>Default payment methods will be added to your <span class="bolded">Express Pay </span>  settings for your next purchase.</p>
+                    </div>
+                    <h3>Biling information</h3>
+                  <div id="link">
+                  <a href="">Select Different Address</a><br>
+                  </div>
+                  <a href="">Enter New Address</a>
+                  <div id="butt">
+                    <button onclick="Pay_final()" id="butta">Continue</button>
+                    <button onclick="pay_pop_off()" id="buttb">Cancel</button>
+                  </div>
+             </div>
+                 </form>
+
+
+
+
+        </div>
+
+
+    </div>
+    <div id="success_ful_pay_ment_">
+        <div id="scimgcenter">
+            <div>
+                <img src="https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif" alt="">
+            </div>
+            
+        </div>
+        <div>
+            <h1>Payment Successful</h1>
+        </div>
+        <div>
+            <button onclick="goHome1()">Continue Shopping</button>
+        </div>
+    </div>
 
 
 
@@ -188,7 +320,6 @@
             // console.log(element.price)
             for(var i = 1; i<element.price.length; i++){
                 par+=element.price[i]
-                
             }
             totalprice+= +par
             console.log(par)
@@ -213,24 +344,41 @@
             document.getElementById('order_total_shi').textContent='$' +total.toFixed(2)
             localStorage.setItem('totalPrice', total)
             couponapplied=true
+            alert('Coupon Applied')
         }
         else{
             alert('Coupon Not Find')
         }
     }
+    function Pay_final(){
+        var cardNo = document.getElementById('card_number').value
+        let name = document.getElementById('name_on_card').value
+        if(cardNo.length!=12 || name == ''){
+            alert("Invalid Card")
+        }else{
+            var total = +localStorage.getItem("totalPrice")+ +13.43
+            document.getElementById('pay_ment_for_m').style.display='none'
+            document.getElementById('success_ful_pay_ment_').style.display='flex'
+            document.getElementById('scimgcenter').style.display='flex'
+
+            alert(total.toFixed(2) + " Debited form your Account 8348********3847")
+            
+        }
+    }
+    function goHome1(){
+        window.location.href='index.html'
+        document.getElementById('success_ful_pay_ment_').style.display='none'
+        document.getElementById('scimgcenter').style.display='none'
+    }
 
 
+    function pay_pop_off(){
+        document.getElementById('pay_ment_for_m').style.display='none'
+    }
+    function pay_pop_oon(){
+        document.getElementById('pay_ment_for_m').style.display='block'
+    }
 
-    // window.onscroll = function() {mynavFunction()};
-    // var nav = document.getElementById("snavbar");
-    // var stick = nav.offsetTop;
-    // function mynavFunction() {
-    //   if (window.pageYOffset >= stick) {
-    //     nav.classList.add("sticky")
-    //   } else {
-    //     nav.classList.remove("sticky");
-    //   }
-    // }
     function OpenSignin(){
         window.location.href='SignIn.html'
     }
@@ -241,4 +389,5 @@
     function OpenCartPage(){
         window.location.href='cart.html'
     }
+
     </script>

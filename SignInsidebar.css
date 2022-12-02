@@ -1,0 +1,104 @@
+#SignMain{
+    /* border: 2px solid red; */
+    /* width: 250%; *
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+#SignMain>div:nth-child(1){
+    display: flex;
+    /* border: 3px solid black; */
+    padding: 0 20px;
+    
+    
+}
+
+#SignMain>div:nth-child(1)>div:nth-child(1) img{
+    /* border: 3px solid black; */
+    width: 190%;
+}
+
+#SignMain>div:nth-child(1)>div:nth-child(1){
+     display: flex;
+    /* border: 2px solid blue; */
+    font-size: 100%;
+    align-items: center;
+    gap: 10%;
+    width: 100%
+}
+
+#SignMain>div:nth-child(2) div:first-child img{
+   width: 280%;
+   /* border: 2px solid green; */
+  margin: 40% 0 0 0;
+}
+
+#SignMain>div:nth-child(2)>div:first-child {
+    /* border: 2px solid green; */
+    padding: 0 20px;
+}
+
+#SignMain>div:nth-child(2)>div:nth-child(2) {
+    /* border: 2px solid green; */
+    padding: 0 20px;
+}
+#SignMain>div:nth-child(2) {
+    /* border: 2px solid green; */
+}
+
+#SignMain i{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    /* border: 2px solid red; */
+}
+
+#SignInSideBarFirst>div{
+width: 50%;
+display: flex;
+/* border: 2px solid green; */
+justify-content: left;
+gap: 5%;
+align-items: center;
+}
+
+#SignInSideBarFirst>div:first-child p{
+    /* border: 2px solid green; */
+    width: 130%;
+}
+#SignInSideBarFirst{
+    /* border: 2px solid red; */
+    padding: 0 20px;
+}
+
+hr{
+    margin: 30px 0 0 0  ;
+}
+
+#SignInSideBarFirst>div:first-child{
+    /* border: 2px solid blue; */
+    width: 35%;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#SignInSideBarFirst img{
+width: 15%;
+}
+
+#SignInSideBarSec >div{
+    display: flex;
+    gap: 5%;
+}
+
+#SignInSideBarSec >div img{
+    width: 7%;
+   
+}
+
+#SignInSideBarSec{
+    padding: 0 20px;
+    margin-top: 20px;
+}

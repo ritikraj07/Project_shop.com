@@ -1,10 +1,12 @@
 *{
-    font-family: 'Roboto';
-    margin: 0;
-
+    font-family: 'Poppins', sans-serif;
+    /* margin: 0; */
 }
+input, label{
+    font-family: 'Poppins', sans-serif;
+}
+
 #body{
-    
     /* border: 2px solid red; */
     width: 80%;
     margin: auto;
@@ -43,14 +45,13 @@
     width: 95%;
     margin-bottom: 25px;
 }
-select{
+#state{
     font-size: 18px;
     padding: 15px;
     margin-top: 8px;
     width: 100%;
     margin-bottom: 25px;
     font-weight: bolder;
-
 }
 
 #_box{
@@ -116,6 +117,11 @@ select{
      width: 250px;
      border-radius: 30px;
      border: none;
+     font-size: 20px;
+ }
+ #save:hover{
+    cursor: pointer;
+    background-color: #303664;
  }
 
 #addPageFooter img{
@@ -132,4 +138,5 @@ select{
     background-color: rgb(156, 156, 156);
     padding: 1.5%  0 1% 1%;
     align-items: center;
+    margin: 200px -10px -10px -10px;
 }

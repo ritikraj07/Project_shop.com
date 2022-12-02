@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="shoppie.css" />
+    <link rel="stylesheet" href="SignInsidebar.css">
     <link rel="icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,99 @@
     
 </head>
 <body>
+    <div  id="overlay_right">
+        <div id="SignMain">
+            <div>
+                          <div>
+                          <div>
+                              <img
+                              src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg"
+                              alt=""
+                              />
+                          </div>
+      
+                          <h1>Account</h1>
+                          </div>
+      
+                   <i onclick="right_slid_bar_off()" class="fa-regular fa-circle-xmark"></i>
+            </div>
+      
+            <div>
+              <div>
+                  Hello,<span id="UserName"></span>
+              </div>
+              <div>
+                <p>Your Shop Consultant is <strong>SHOP.COM</strong></p>
+              </div>
+      
+              <div id="SignInSideBarFirst">
+                  <div>
+                      <img onclick="OpenSignIN()" style="width:70px; margin: -5px 0;" src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" alt="">
+                      <p  onclick="OpenSignIN()" id="SignInStatus">Sign In</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg" alt="">
+                      <p>Track Orders</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                      <p>Reorder Items</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-cashback-sm-24px.svg" alt="">
+                      <p>Cashback Program</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg" alt="">
+                      <p>Help</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" alt="">
+                      <p>Create Account</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                      <p>My Account</p>
+                  </div>
+              </div>
+            </div>
+      
+            <hr>
+      
+            <div id="SignInSideBarSec">
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" alt="">
+                  <p>List Manager</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-gift-registry-24px.svg" alt="">
+                  <p>Gift Registry</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-egifts-24px.svg" alt="">
+                  <p>eGifts</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-wellness-24px.svg" alt="">
+                  <p>Wellness Manager</p>
+              </div>
+      
+            </div>
+      
+            <hr>
+            <div>
+               <img src="country.png" alt="">
+            </div>
+      
+          </div>
+      
+
+
+
+
+    </div>
+
+
     <div id="overlay_left">
         <div onclick="offLeft()" id="btndiv_overlay"><Button><i class="fa-regular fa-circle-xmark"></i></Button></div>
         <div id="div1overlay">
@@ -86,7 +180,7 @@
                         <a href="">SHOP Local</a>
                     </div>
                     <div>
-                        <img class="f4cur" onclick="OpenSignin()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                        <img class="f4cur" onclick="right_slid_on()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
                         <img class="f4cur" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
                         <img class="f4cur" onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
                     </div>
@@ -756,10 +850,20 @@
         nav.classList.remove("sticky");
       }
     }
+    // SignInStatus
 
+    function OpenSignIN(){
+        var getInfo =localStorage.getItem('signInUser')
+        if(getInfo==1){
+            localStorage.setItem('signInUser', 0)
+            document.getElementById('SignInStatus').innerText='Sign In'
+            document.getElementById("UserName").innerText=' User'
+            window.location.reload()
 
-    function OpenSignin(){
-        window.location.href='SignIn.html'
+        }else{
+            window.location.href='SignIn.html'
+        }
+        
     }
    
     function goHome(){
@@ -777,5 +881,25 @@
         document.getElementById('navbar').classList.remove('backup')
         document.getElementById('container_index').classList.remove('backup')
 }
+    function right_slid_on(){
+        document.getElementById("overlay_right").style.display = "block";
+        document.getElementById('navbar').setAttribute('class', 'backup')
+        var getInfo =localStorage.getItem('signInUser')
+        if(getInfo==1){
+            var name =JSON.parse(localStorage.getItem("registeredUser"))[0]['name']
+            document.getElementById("UserName").innerText=' '+name
+            document.getElementById('SignInStatus').innerText='Sign Out'
+        }else{
+            document.getElementById("UserName").innerText=' User'
+        }
+    }
+    function right_slid_bar_off(){
+        document.getElementById("overlay_right").style.display = "none";
+        document.getElementById('navbar').classList.remove('backup')
+        document.getElementById('container_index').classList.remove('backup')
+    }
+
+    
+
     </script>
     <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>

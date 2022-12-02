@@ -1,0 +1,216 @@
+
+#pay_ment_for_m {
+  margin: auto;
+  position: fixed;
+  display: none;
+  top: 50px; left: 560px;
+  bottom: 50px; right: 560px;
+  top:1;
+  background-color:white;
+  z-index:5;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+  }
+#pay_fit{
+  padding: 20px;
+  /* background-color: wheat; */
+  width: 600px;
+}
+
+#cross {
+    border: none;
+}
+#h3,visa {
+  
+    color: #202340;
+}
+#visaa {
+  /* border: 1px solid red; */
+    margin-right: 50px;
+    font-family: roboto;
+    color: #202340;
+    width: 40%;
+}
+#visa {
+  /* border: 1px solid red; */
+    display: flex;
+    font-family: roboto;
+    color: #202340;
+}
+#visab {
+    display: block;
+    font-family: roboto;
+    color: #202340;
+}
+#carda {
+   display: flex;
+   font-family: roboto;
+    color: #202340;
+   
+}
+#cardaa  {
+ margin-right: 50px;
+ margin-top: 4px;
+  font-family: roboto;
+    color: #202340;
+} 
+
+#cardab  {
+    margin-right: 50px;
+    margin-top: 7px;
+    font-family: roboto;
+    color: #202340;
+   }
+ 
+   #cardac  {
+    font-family: roboto;
+    color: #202340;
+    margin-top: 7px;
+   }
+   #checkboxa {
+    margin-top: 3px;
+    
+   }
+   #checkboxb {
+    margin-top: 10px;
+   }
+   .bolded {
+     font-weight: bold;
+     }
+     #express {
+        /* border: solid; */
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     
+       
+       
+     }
+     #boss {
+        width: 90%;
+     }
+     input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      #innput {
+        width: 100%;
+        /* padding: 12px 20px; */
+        margin: 8px 0;
+        /* box-sizing: border-box; */
+        border: 6px;
+        border-radius: 15px;
+      }
+    
+    
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      /* border-radius: 4px; */
+      /* box-sizing: border-box; */
+      /* margin-top: 6px; */
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+      #link {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      #butta{
+       
+    top:50%;
+    background-color:rgb(71, 71, 130);
+    color: #fff;
+    border:none;
+    width: 100px;
+    border-radius:14px;
+    height: 30px;
+    margin-left: 12px;
+      }
+      #buttb{
+       
+        top:50%;
+        background-color: #fff;
+        color:rgb(71, 71, 130);
+        width: 100px;
+        border-radius:14px;
+        height: 30px;
+        margin-left: 10px;
+              
+          }
+          #butt {
+            margin-top: 75px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* height: 76px; */
+             width: 100%;  
+             padding: 10px 0 38px 30px;
+             margin-left: -23px;
+             margin-bottom: 0;
+            
+        }
+        #butt button:hover{
+          cursor: pointer;
+          background-color: #202340;
+          color: white;
+          font-weight: bold;
+        }
+        #icon {
+           margin-top: 20px;
+           display: flex;
+           justify-content: end;
+        }
+      
+   
+        #success_ful_pay_ment_{
+          margin: auto;
+          position: fixed;
+          display: none;
+          top: 50px; left: 560px;
+          bottom: 50px; right: 560px;
+          top:1;
+          background-color:white;
+          z-index:5;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          cursor: pointer;
+          padding: 20px;
+          height: 520px;
+          width: 600px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          }
+          #success_ful_pay_ment_,#scimgcenter{
+            display: none;
+          }
+          /* .test_center{
+            display: 
+          } */
+        #scimgcenter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #success_ful_pay_ment_ img{
+          width: 400px;
+          /* display: none; */
+        }
+
+#success_ful_pay_ment_ button{
+  border:none;
+  font-size:xx-large;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: rgb(83, 233, 118);
+  color: white;
+}
+
+#success_ful_pay_ment_ button:hover{
+  cursor:pointer;
+  background-color: antiquewhite;
+  color: rgb(83, 233, 118);
+}

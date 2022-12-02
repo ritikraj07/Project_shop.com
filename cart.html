@@ -121,12 +121,12 @@
                 </div>
                 <div id="third_">
                     <div>
-                    <input type="text" name="ZIP Code" id="" placeholder="ZIP Code">
-                    <button>Estimate Shipping</button>
+                    <input type="text" name="ZIP Code" id="zipcode" placeholder="ZIP Code">
+                    <button onclick="zipPrint()">Estimate Shipping</button>
                     </div>
                 </div>
                 <div id="forth_">
-                    <div><button onclick="OpenShipping()">Proceed to Checkout</button></div>
+                    <div><button onclick="addressPage()">Proceed to Checkout</button></div>
                 </div>
                 <div id="five_">
                     <div> <h5>Or Checkout With:</h5> </div>
@@ -150,7 +150,19 @@
 </html>
 <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
 <script>
-
+    
+  function zipPrint(){
+    var zip = document.getElementById('zipcode').value
+    var spc = zip[1]+zip[2]
+    var spc2 = zip[3]*0.394 +zip[0]*0.784594 +zip[4]*0.8477348783
+    var shp_pri = (spc*0.05973498349743858943787837+5).toFixed(2)
+    if(zip.length != 6){
+        alert("Please enter valid ZIP CODE")
+    }else{
+        alert( "Estimate Shpping Charge for"+ " "+ zip + " is $" +  shp_pri)
+    }
+    
+  }
 
 
     window.onscroll = function() {mynavFunction()};
@@ -173,10 +185,10 @@
     function OpenCartPage(){
         window.location.href='cart.html'
     }
-    function OpenShipping(){
+    function addressPage(){
         var look_acc = localStorage.getItem('signInUser')
         if(look_acc==1){
-            window.location.href='shipping.html'
+            window.location.href='addressPage.html'
         }else{
             window.location.href='SignIn.html'
         }

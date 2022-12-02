@@ -127,17 +127,17 @@
   
     <div>
         <h1>Create an account</h1>
-    <form action="SignIn.html" id="createAccform">
+    <form  id="createAccform">
       <p>* Indicates required field</p>
       <div>
          <div>
           <div>
             <label for="">First name*</label><br />
-            <input type="text" placeholder="First name here" style="font-style:italic"  required/>
+            <input id="f1name" type="text" placeholder="First name here" style="font-style:italic"  required/>
           </div>
           <div>
             <label for="">Last name*</label><br />
-            <input type="text" placeholder="Last name here" style="font-style:italic"  required/>
+            <input id="f2name" type="text" placeholder="Last name here" style="font-style:italic"  required/>
           </div>
         </div>
         
@@ -202,7 +202,7 @@
       <div>
         <label for="">Also, please confirm you are not a robot:</label><br>
         <div>
-            <input type="checkbox" name="" id="checkbox" />
+            <input onclick="check_robot()" type="checkbox" name="" id="robot_check" />
             <label for="">I'm not a robot</label>
             <img src="https://media.wired.co.uk/photos/606d9f599a15f73a597a1a6b/master/w_1600,c_limit/aaaauntitled-1.jpg" alt="">
         </div>
@@ -265,6 +265,7 @@
 </html>
 
 <script>
+
     document.getElementById("submit").addEventListener("click",getData);
 
     var registeredUser = JSON.parse(localStorage.getItem("registeredUser")) || [];
@@ -274,15 +275,24 @@
         var email = document.getElementById("email").value;
         var password= document.getElementById("password").value;
         var confirmPassword= document.getElementById("confirmPass").value;
-        var user={email: email, password: password};
-        if(password==confirmPassword &&  email!="" && password!=""){
+        var fname = document.getElementById('f1name').value
+        var lname = document.getElementById('f2name').value
+        var user={email: email, password: password, name:fname, lname:lname};
+        if(fname == '' || lname ==''){
+          alert('Please enter your full name')
+        }
+        else if(password.length < 7 || confirmPassword.length<7){
+          alert('Please enter atlest 7 digit Strong PassWord')
+        }else if(password!=confirmPassword){
+          alert("Uh oh! Your password and confirm password don't match!");
+        }
+        else if(password==confirmPassword &&  email!="" && password!=""){
             registeredUser.push(user);
             localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
-            
+            window.location.href='SignIn.html'
+            alert('Account Created Successfully')
         }
-        else{
-            alert("Uh oh! Your password and confirm password don't match!");
-        }
+       
         
     }
 </script>
