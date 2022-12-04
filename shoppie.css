@@ -246,7 +246,7 @@ font-family: Roboto,Arial,Helvetica,sans-serif;
 } */
 
  #satwaa  {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     /* border: solid; */
     font-family: Roboto,Arial,Helvetica,sans-serif;

@@ -329,10 +329,10 @@
         document.getElementById('order_total_ship').textContent='$' +total.toFixed(2)
         document.getElementById('order_total_shi').textContent='$' + total.toFixed(2)
     }
-    var couponapplied = false;
+    var couponapplied = JSON.parse(localStorage.getItem("couponapplied"))|| 0
     function ApplyCoupon(){
         var cp= document.querySelector('#couponcheck').value
-        if(couponapplied){
+        if(couponapplied == 1){
             alert('Coupon already applied')
         }
         else if (cp=='masai30'){
@@ -343,13 +343,24 @@
              document.getElementById('order_total_ship').textContent='$' + total.toFixed(2)
             document.getElementById('order_total_shi').textContent='$' +total.toFixed(2)
             localStorage.setItem('totalPrice', total)
-            couponapplied=true
+            localStorage.setItem("couponapplied", 1)
             alert('Coupon Applied')
         }
         else{
             alert('Coupon Not Find')
         }
     }
+    var address_data = JSON.parse(localStorage.getItem('Address'))
+    display_user_data(address_data)
+    function display_user_data(data){
+      document.getElementById('name').innerText= data.firstName + " "+ data.lastname
+      document.getElementById('city').innerText = data.city
+      document.getElementById('add').innerText = data.address + " " + data.address2 + " "+ data.state
+      document.getElementById('phone-no').innerText = data.phoneNumber
+    }
+
+
+
     function Pay_final(){
         var cardNo = document.getElementById('card_number').value
         let name = document.getElementById('name_on_card').value

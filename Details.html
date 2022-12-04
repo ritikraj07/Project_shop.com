@@ -446,8 +446,8 @@
     var ProductInCart = JSON.parse(localStorage.getItem('cart'))||[]
     function AddToCart(list){
     var check = false;
-    var find_product_in_cart = ProductInCart.filter(function(element){
-      if(element.image==list.image){
+    ProductInCart.filter(function(element){
+      if(element.name==list.name){
         check = true;
       }
     })

@@ -11,53 +11,207 @@
     <link rel="icon" href="icon.png">
 </head>
 <body>
+        <div  id="overlay_right">
+        <div id="SignMain">
+            <div>
+                          <div>
+                          <div>
+                              <img
+                              src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg"
+                              alt=""
+                              />
+                          </div>
+      
+                          <h1>Account</h1>
+                          </div>
+      
+                   <i onclick="right_slid_bar_off()" class="fa-regular fa-circle-xmark"></i>
+            </div>
+      
+            <div>
+              <div>
+                  Hello,<span id="UserName"></span>
+              </div>
+              <div>
+                <p>Your Shop Consultant is <strong>SHOP.COM</strong></p>
+              </div>
+      
+              <div id="SignInSideBarFirst">
+                  <div>
+                      <img onclick="OpenSignIN()" style="width:70px; margin: -5px 0;" src="https://img.shop.com/Image/resources/images/icon-sign-in-24px.svg" alt="">
+                      <p  onclick="OpenSignIN()" id="SignInStatus">Sign In</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-track-orders-24px.svg" alt="">
+                      <p>Track Orders</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                      <p>Reorder Items</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-cashback-sm-24px.svg" alt="">
+                      <p>Cashback Program</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-help-outline-24px.svg" alt="">
+                      <p>Help</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-create-account-24px.svg" alt="">
+                      <p>Create Account</p>
+                  </div>
+                  <div>
+                      <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                      <p>My Account</p>
+                  </div>
+              </div>
+            </div>
+      
+            <hr>
+      
+            <div id="SignInSideBarSec">
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" alt="">
+                  <p>List Manager</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-gift-registry-24px.svg" alt="">
+                  <p>Gift Registry</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-egifts-24px.svg" alt="">
+                  <p>eGifts</p>
+              </div>
+              <div>
+                  <img src="https://img.shop.com/Image/resources/images/icon-wellness-24px.svg" alt="">
+                  <p>Wellness Manager</p>
+              </div>
+      
+            </div>
+      
+            <hr>
+            <div>
+               <img src="country.png" alt="">
+            </div>
+      
+          </div>
+      
+
+
+
+
+    </div>
+
+
+    <div id="overlay_left">
+        <div onclick="offLeft()" id="btndiv_overlay"><Button><i class="fa-regular fa-circle-xmark"></i></Button></div>
+        <div id="div1overlay">
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+            <h2>SHOP.COM</h2>
+        </div>
+        <div id="div2overlay">
+            <h3>Categories</h3>
+            <p>Cyber week Specials</p>
+            <p>Gift Center</p>
+            <p>SHOP.COM Home Warranties</p>
+            <p>OneCart Exclusive Deals</p>
+            <p>Clothes</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Shoes</p>
+            <p>Beauty</p>
+            <p>Home</p>
+            <p>Electronics</p>
+            <p>Health & Nutrition</p>
+            <p>Jewelry</p>
+            <p>Kids</p>
+            <p>Pet Supplies</p>
+            <p>Food & Drink</p>
+            <p>Sports</p>
+            <P>Travel</P>
+            <P>SHOP Travel</P>
+            <P>All Stores</P>
+            <P>Exclusive Brands</P>
+        </div>
+    </div>
     <div id="navbar">
         <div id="navbar_static">
-            <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a href="">Terms Apply</a> </p>
+            <p>Buy now, pay later! Use Sezzle this Holiday Season!   <a href="">Learn More</a> </p>
         </div>
-        <div id="navMain">
-            <div>
-                <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
-                <div id="searching_box">
-                    <select name="navFilter" id="navFilter">
-                        <option value="All-Departments">All Departments</option>
-                        <option value="Auto">Auto</option>
-                        <option value="Baby">Baby</option>
-                        <option value="Beauty">Beauty</option>
-                        <option value="Books">Books</option>
-                        <option value="Business">Business</option>
-                        <option value="Cameras">Cameras</option>
-                        <option value="Clothes">Clothes</option>
-                    </select>
-                    <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
-                    <!-- <button>Q</button> -->
-                    
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                        <!-- <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""> -->
-                    
+        <div id="nav">
+            <div id="navMain" >
+                <div>
+                    <div><img onclick="goHome()" id="logo" src="https://img.shop.com/Image/resources/logos/shop-logo-us-thanksgiving.svg" alt="shop.com"></div>
+                    <div id="searching_box">
+                        <select class="f4cur" name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" class="f4cur" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div><img class="f4cur" id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
                 </div>
-                <div><img id="black_fridayN" src="https://www.shop.com/feo-cdn/_/d/3hhCIyNJE.webp" alt="black Friday sale"></div>
+                <div id="lastnav">
+                    <div><img onclick="menuLeft()"  class="f4cur" src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                    <!-- <div><button><i class="fa-solid fa-bars"></i></button></div> -->
+                    <div id="navLink">
+                        <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
+                        <a href="ExclusiveBrands.html">Exclusive Brands</a>
+                        <a href="">Stores</a>
+                        <a href="">Deals</a>
+                        <a href="">Shop Travel</a>
+                        <a href="">Departments</a>
+                        <a href="">ShopBuddy</a>
+                        <a href="">SHOP Local</a>
+                    </div>
+                    <div>
+                        <img class="f4cur" onclick="right_slid_on()" src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
+                        <img class="f4cur" src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
+                        <img class="f4cur" onclick="OpenCartPage()" src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                    </div>
+                </div>
+
             </div>
-            <div id="lastnav">
-                <div><img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
-                <div id="navLink">
-                    <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
-                    <a href="">Exclusive Brands</a>
-                    <a href="">Stores</a>
-                    <a href="">Deals</a>
-                    <a href="">Shop Travel</a>
-                    <a href="">Departments</a>
-                    <a href="">ShopBuddy</a>
-                    <a href="">SHOP Local</a>
+            <div id="navformid">
+                <div>
+                    <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt="">
-                    <img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt="">
-                    <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="">
+                    <button onclick="menuLeft()"><i class="fa-sharp fa-solid fa-bars"></i></button>
                 </div>
-            </div>
-
+                <!-- <div> -->
+                    <div id="searching_box">
+                        <select name="navFilter" id="navFilter">
+                            <option value="All-Departments">All Departments</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="Business">Business</option>
+                            <option value="Cameras">Cameras</option>
+                            <option value="Clothes">Clothes</option>
+                        </select>
+                        <input type="text" name="" id="Search" placeholder="Search  SHOP.COM...">
+                        <button onclick="goToProductPage()" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                <!-- </div> -->
+                <div><button><i class="fa-solid fa-user"></i></button></div>
+                <div>
+                    <button><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
         </div>
+    </div>
     </div>
 
     <div id="Exclu_container">
@@ -222,3 +376,79 @@
 
     </script>
 <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
+<script>
+    function goToProductPage(){
+        var search_pro = document.getElementById('Search').value 
+        if(search_pro=='shoe' ||search_pro=='Shoe' || search_pro=='Shoes' || search_pro=='shoes' || search_pro=='boots' || search_pro=='Boots' ){
+            window.location.href='MainProduct.html'
+        }else{
+            alert("Product Not Found!")
+        }
+    }
+
+
+    window.onscroll = function() {mynavFunction()};
+    var nav = document.getElementById("nav");
+    var stick = nav.offsetTop;
+    function mynavFunction() {
+        // alert('hello')
+      if (window.pageYOffset >= stick) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+    // SignInStatus
+
+    function OpenSignIN(){
+        var getInfo =localStorage.getItem('signInUser')
+        if(getInfo==1){
+            localStorage.setItem('signInUser', 0)
+            document.getElementById('SignInStatus').innerText='Sign In'
+            document.getElementById("UserName").innerText=' User'
+            window.location.reload()
+
+        }else{
+            window.location.href='SignIn.html'
+        }
+        
+    }
+   
+    function goHome(){
+        window.location.href='index.html'
+    }
+    function OpenCartPage(){
+        window.location.href='cart.html'
+    }
+    function menuLeft(){
+        document.getElementById("overlay_left").style.display = "block";
+        document.getElementById('navbar').setAttribute('class', 'backup')
+    }
+    function offLeft() {
+        document.getElementById("overlay_left").style.display = "none";
+        document.getElementById('navbar').classList.remove('backup')
+        document.getElementById('container_index').classList.remove('backup')
+}
+    function right_slid_on(){
+        document.getElementById("overlay_right").style.display = "block";
+        document.getElementById('navbar').setAttribute('class', 'backup')
+        var getInfo =localStorage.getItem('signInUser')
+        if(getInfo==1){
+            var name =JSON.parse(localStorage.getItem("registeredUser"))[0]['name']
+            document.getElementById("UserName").innerText=' '+name
+            document.getElementById('SignInStatus').innerText='Sign Out'
+        }else{
+            document.getElementById("UserName").innerText=' User'
+        }
+    }
+    function right_slid_bar_off(){
+        document.getElementById("overlay_right").style.display = "none";
+        document.getElementById('navbar').classList.remove('backup')
+        document.getElementById('container_index').classList.remove('backup')
+    }
+
+    
+
+    </script>
+    <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>
+    

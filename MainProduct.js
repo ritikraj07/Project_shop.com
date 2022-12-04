@@ -1070,6 +1070,7 @@ function displaydata(data) {
         // function for add to cart
         addtocart.addEventListener('click', function(){
           AddToCart(list)
+          
         })
 
         divbutton.append(seedetail, addtocart);
@@ -1091,13 +1092,14 @@ var ProductInCart = JSON.parse(localStorage.getItem('cart'))||[]
 function AddToCart(list){
     var check = false;
     var find_product_in_cart = ProductInCart.filter(function(element){
-      if(element.image==list.image){
+      if(element.name==list.name){
         check = true;
       }
     })
     if(check==true){
       alert("Product already exist in Cart!")
     }else{
+      alert("Product added to Cart")
       ProductInCart.push(list)
       localStorage.setItem('cart', JSON.stringify(ProductInCart))
     }    

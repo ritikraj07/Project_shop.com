@@ -1,15 +1,19 @@
 #formMainPage{
     /* border: 2px solid red; */
-    margin: 19% 0  10% 0;
+    margin: 11% 0  10% 0;
+    font-family: 'Poppins', sans-serif;
     color: #202340 ;
 }
-
+*{
+    font-family: 'Poppins', sans-serif;
+}
 #signInform{
     display: flex;
     /* border: 2px solid pink; */
     gap: 6%;
     font-size: 120%;
     margin: 0 0 0 15%;
+    
 }
 
 #signInform>div:nth-child(1){
