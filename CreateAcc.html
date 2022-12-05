@@ -289,8 +289,9 @@
         else if(password==confirmPassword &&  email!="" && password!=""){
             registeredUser.push(user);
             localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
-            window.location.href='SignIn.html'
             alert('Account Created Successfully')
+            window.location.href='SignIn.html'
+            
         }
        
         

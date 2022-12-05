@@ -221,7 +221,7 @@
   animation-direction:reverse;
 
 }
-
+/* 
 @keyframes rotate {
   0% {
     transform: rotatey(350deg);
@@ -231,4 +231,4 @@
     transform: rotatey(360deg);
     transform: scale(2,2);
   }
-}
+} */
