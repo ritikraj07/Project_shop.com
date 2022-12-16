@@ -271,13 +271,28 @@
     var registeredUser = JSON.parse(localStorage.getItem("registeredUser")) || [];
 
     function getData(){
-
         var email = document.getElementById("email").value;
         var password= document.getElementById("password").value;
         var confirmPassword= document.getElementById("confirmPass").value;
         var fname = document.getElementById('f1name').value
         var lname = document.getElementById('f2name').value
         var user={email: email, password: password, name:fname, lname:lname};
+        // if(fname == '' || lname ==''){
+        //   alert('Please enter your full name')
+        // }
+        // else if(password.length < 7 || confirmPassword.length<7){
+        //   alert('Please enter atlest 7 digit Strong PassWord')
+        // }else if(password!=confirmPassword){
+        //   alert("Uh oh! Your password and confirm password don't match!");
+        // }
+        // else if(password==confirmPassword &&  email!="" && password!=""){
+        //     registeredUser.push(user);
+        //     localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
+        //     alert('Account Created Successfully')
+        //     window.location.href='SignIn.html'
+
+        // }
+
         if(fname == '' || lname ==''){
           alert('Please enter your full name')
         }
@@ -289,9 +304,8 @@
         else if(password==confirmPassword &&  email!="" && password!=""){
             registeredUser.push(user);
             localStorage.setItem("registeredUser",JSON.stringify(registeredUser));
-            alert('Account Created Successfully')
             window.location.href='SignIn.html'
-            
+            alert('Account Created Successfully')
         }
        
         

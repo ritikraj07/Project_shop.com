@@ -29,18 +29,24 @@ function display(DATA) {
     total_price += final_price_each;
     var p1 = document.createElement("span");
     p1.innerHTML =
-      '<span><p>+ $0.3 <img class="mid_p" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> caseback</p></span>';
+      '<span><p>+ $0.3 <img class="mid_p" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> cashback</p></span>';
 
     var item = document.createElement("p");
-    item.innerText = "Item: " + element.type;
+    item.innerText = "Item: " + 'Shoes'
     var color = document.createElement("p");
     color.innerText = "Color: " + element.color;
     var size = document.createElement("p");
     size.innerText = "Size: " + element.size;
 
     var quantity = document.createElement("Select");
+   
+    quantity.setAttribute("id", element.name.replace(" ", ""));
+     // var i = element.name.replace(" ", "")
+    // var qun = document.getElementById(i).value
+    // var opt = document.createElement("option");
+    // opt.innerText = qun;
+    // opt.setAttribute("value", qun)
 
-    quantity.setAttribute("id", element.name);
     var opt1 = document.createElement("option");
     opt1.innerText = 1;
     opt1.setAttribute("value", 1);
@@ -72,7 +78,18 @@ function display(DATA) {
     var opt10 = document.createElement("option");
     opt10.innerText = 10;
     opt10.setAttribute("value", 10);
+    let arr = [opt1, opt2,
+      opt3,
+      opt4,
+      opt5,
+      opt6,
+      opt7,
+      opt8,
+      opt9,
+      opt10]
+
     quantity.append(
+  
       opt1,
       opt2,
       opt3,
@@ -84,13 +101,16 @@ function display(DATA) {
       opt9,
       opt10
     );
+    var q = element.quantity
+    arr[q-1].selected=true
 
     var div3 = document.createElement("div");
     div3.innerText = "Quantity";
     div3.append(quantity);
     quantity.addEventListener("change", function () {
-      var i = element.name
-      var qun = document.getElementById(i).value
+      // var i = element.name.replace(" ", "")
+      // var qun = document.getElementById(i).value
+      var qun = quantity.value 
       // console.log(qun, "dgh")
       ProductInCart[index].quantity = qun;
       localStorage.setItem("cart", JSON.stringify(ProductInCart));

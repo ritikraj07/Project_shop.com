@@ -125,7 +125,7 @@
             <p>SHOP.COM Home Warranties</p>
             <p>OneCart Exclusive Deals</p>
             <p>Clothes</p>
-            <p>Shoes</p>
+            <p onclick="goProduct()">Shoes</p>
             <p>Beauty</p>
             <p>Shoes</p>
             <p>Beauty</p>
@@ -173,7 +173,7 @@
                     <div id="navLink">
                         <!-- <p>Black Friday Savings: Use your MASTERCARD® with Click to Pay at checkout to get 20% off your order!  <a style="color: black;" href="">Terms Apply</a> </p> -->
                         <a href="ExclusiveBrands.html">Exclusive Brands</a>
-                        <a href="">Stores</a>
+                        <a href="MainProduct.html">Stores</a>
                         <a href="">Deals</a>
                         <a href="">Shop Travel</a>
                         <a href="">Departments</a>
@@ -901,7 +901,9 @@
         document.getElementById('container_index').classList.remove('backup')
     }
 
-    
+    function goProduct(){
+        window.location.href="MainProduct.html";
+    }
 
     </script>
     <script src="https://kit.fontawesome.com/257095c429.js" crossorigin="anonymous"></script>

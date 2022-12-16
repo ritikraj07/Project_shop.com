@@ -335,7 +335,7 @@
         if(couponapplied == 1){
             alert('Coupon already applied')
         }
-        else if (cp=='masai30'){
+        else if (cp=='masai30' && couponapplied != 1){
             var totalprice = 0
             var total = +localStorage.getItem("totalPrice")+ +13.43
             total=total*0.8
@@ -364,7 +364,7 @@
     function Pay_final(){
         var cardNo = document.getElementById('card_number').value
         let name = document.getElementById('name_on_card').value
-        if(cardNo.length!=12 || name == ''){
+        if(cardNo.length<10 || name == ''){
             alert("Invalid Card")
         }else{
             var total = +localStorage.getItem("totalPrice")+ +13.43
@@ -372,7 +372,7 @@
             document.getElementById('success_ful_pay_ment_').style.display='flex'
             document.getElementById('scimgcenter').style.display='flex'
 
-            alert(total.toFixed(2) + " Debited form your Account 8348********3847")
+            // alert(total.toFixed(2) + " Debited form your Account 8348********3847")
             
         }
     }

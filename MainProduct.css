@@ -5,6 +5,10 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+#leftPortion  p:hover{
+    cursor: pointer;
+}
+
 #main {
     display: flex;
     flex-direction: row;
